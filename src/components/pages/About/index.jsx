@@ -9,7 +9,7 @@ function About() {
       className={`w-screen h-screen ${styles.sectionContainer} `}
     >
       <div className={`font-inter`}>
-        <div className="hidden lg:block">
+        <div className="block">
           <a className={`${styles.buttonBg}`}>Sample Text</a>
         </div>
         <div className="my-5">
@@ -37,7 +37,7 @@ function About() {
           </div>
         </div>
       </div> */}
-        <div className="grid grid-cols-2">
+        <div className="lg:grid grid-cols-2">
           <Content/>
         </div>
       </div>
