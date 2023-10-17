@@ -21,16 +21,21 @@ import {
 import { UnrealBloomPass } from "three-stdlib";
 import Model from "./models/Mascot/Model";
 import Mascot from "./models/Mascot/Mascot";
-import HeroParticles from "./models/Particles/HeroParticles";
-import { easing } from "maath"
-
+import { easing } from "maath";
+import StarParticles from "./models/Particles/StarParticles";
+import { useAtom } from "jotai";
+import { currentPageAtom } from "../GlobalState";
 extend({ UnrealBloomPass });
-
 
 function Rig() {
   return useFrame((state, delta) => {
-    easing.damp3(state.camera.position, [0 + state.mouse.x / 4, 2.12 + state.mouse.y / 4, 1.85], 0.2, delta)
-  })
+    easing.damp3(
+      state.camera.position,
+      [0 + state.mouse.x / 4, 2.12 + state.mouse.y / 4, 1.85],
+      0.2,
+      delta
+    );
+  });
 }
 
 const Experience = (props) => {
@@ -63,9 +68,21 @@ const Experience = (props) => {
   const sheet = useCurrentSheet();
   const scroll = useScroll();
 
+  const [currentPage, setCurrentPage] = useAtom(currentPageAtom);
+
+  const sequenceLength = val(sheet.sequence.pointer.length);
+
+  function logCurrentPageCallback(scroll, callback) {
+    const currentPage = Math.floor(scroll.offset * scroll.pages) + 1;
+   console.log("current page:", currentPage)
+    callback(currentPage);
+  }
+
   useFrame(() => {
-    const sequenceLength = val(sheet.sequence.pointer.length);
-    sheet.sequence.position = scroll.offset * sequenceLength;
+    if (scroll) {
+      logCurrentPageCallback(scroll, setCurrentPage);
+      sheet.sequence.position = scroll.offset * sequenceLength;
+    }
   });
 
   return (
@@ -75,18 +92,17 @@ const Experience = (props) => {
         <PerspectiveCamera
           theatreKey="Camera"
           makeDefault
-          position={[0, 3.50, 1.85]}
+          position={[0, 3.5, 1.85]}
           fov={90}
           near={0.1}
           far={70}
         />
-
+        <StarParticles />
         <CustomLights />
-       
-        <Model />
-     
+  
+        <Model currentPage={currentPage}/>
         <Effects disableGamma>
-          <unrealBloomPass  threshold={1} strength={0.9} radius={0.800}/>
+          <unrealBloomPass threshold={1} strength={0.9} radius={0.8} />
         </Effects>
         <BakeShadows />
       </Suspense>

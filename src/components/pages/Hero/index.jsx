@@ -4,7 +4,7 @@ function Hero() {
  
   return (
     <section id="hero" className={`w-screen h-screen ${styles.sectionContainer} `}>
-      <div className={` text-center py-12 justify-center font-inter`}>
+      <div className={` text-center lg:pt-[150px] justify-center font-inter`}>
         <h1 className={`gradient-text text-white text-[54px]  font-semibold`}>
           Introducing Mesh Multiplayer Gaming
         </h1>

@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <header>
       <nav>
-        <div className={`relative w-full z-50 py-8 ${styles.sectionContainer}`}>
+        <div className={`fixed w-full z-50 py-8 ${styles.sectionContainer}`}>
           <div className="flex justify-between mb-5">
             <div className="relative z-10">
               <a aria-label="Home" href="/">
