@@ -35,19 +35,19 @@
                     "handles": [
                       0.5,
                       1,
-                      0.55,
-                      0.085
+                      0.5,
+                      0
                     ],
                     "type": "bezier",
                     "value": -0.48944317705109863
                   },
                   {
                     "id": "-fKVa8eQZn",
-                    "position": 4.767,
+                    "position": 4.267,
                     "connectedRight": true,
                     "handles": [
-                      0.68,
-                      0.53,
+                      0.5,
+                      1,
                       0.5,
                       0
                     ],
@@ -80,19 +80,19 @@
                     "handles": [
                       0.5,
                       1,
-                      0.55,
-                      0.085
+                      0.5,
+                      0
                     ],
                     "type": "bezier",
                     "value": 1.8111429523687987
                   },
                   {
                     "id": "ltWYWuGbD-",
-                    "position": 4.767,
+                    "position": 4.267,
                     "connectedRight": true,
                     "handles": [
-                      0.68,
-                      0.53,
+                      0.5,
+                      1,
                       0.5,
                       0
                     ],
@@ -125,19 +125,19 @@
                     "handles": [
                       0.5,
                       1,
-                      0.55,
-                      0.085
+                      0.5,
+                      0
                     ],
                     "type": "bezier",
                     "value": 2.03
                   },
                   {
                     "id": "u2n88yWm9y",
-                    "position": 4.767,
+                    "position": 4.267,
                     "connectedRight": true,
                     "handles": [
-                      0.68,
-                      0.53,
+                      0.5,
+                      1,
                       0.5,
                       0
                     ],
@@ -215,19 +215,19 @@
                     "handles": [
                       0.5,
                       1,
-                      0.55,
-                      0.085
+                      0.5,
+                      0
                     ],
                     "type": "bezier",
                     "value": 0.4298988928776314
                   },
                   {
                     "id": "Jqc1_8un1D",
-                    "position": 4.767,
+                    "position": 4.267,
                     "connectedRight": true,
                     "handles": [
-                      0.68,
-                      0.53,
+                      0.5,
+                      1,
                       0.5,
                       0
                     ],
@@ -326,7 +326,6 @@
   },
   "definitionVersion": "0.4.0",
   "revisionHistory": [
-    "Qe_E1UcTjVLfpmxE",
     "Uga-nMJQ7l9cNd0g",
     "ruVJPeMd-G4W3w7y"
   ]

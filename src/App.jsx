@@ -9,9 +9,11 @@ import { editable as e, SheetProvider } from "@theatre/r3f";
 import Navbar from "./components/navbar";
 import Hero from "./components/pages/Hero";
 import About from "./components/pages/About";
+import prodAni from "./CameraAnimation.json"
+import Capabilities from "./components/pages/capabilities";
 
 function App() {
-  const sheet = getProject("Tashi Bear Animation").sheet("TashiScene");
+  const sheet = getProject("Tashi Bear Animation", {state: prodAni}).sheet("TashiScene");
 
   return (
     <BrowserRouter>
@@ -30,6 +32,7 @@ function App() {
           
             <Hero />
             <About />
+            <Capabilities/>
           </Scroll>
         </ScrollControls>
       </Canvas>

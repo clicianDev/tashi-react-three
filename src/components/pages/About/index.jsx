@@ -1,38 +1,23 @@
 import React from "react";
 import styles from "../../styles";
-import Benefits from "./components/Benefits";
+import Content from "./components/Content";
 function About() {
   return (
-    // <section
-    //   id="About"
-    //   className={`w-screen h-screen ${styles.sectionContainer} `}
-    // >
-    //   <div className={` text-center py-12 font-inter `}>
-    //     <div className="hidden lg:block mb-7">
-    //       <a className={`${styles.buttonBgTwo}`}>Integrations</a>
-    //     </div>
-    //     <h1 className={`gradient-text-2 text-white text-[54px] font-semibold`}>
-    //       Benefits that
-    //       <br /> we deliver.
-    //     </h1>
-    //   </div>
-    //     <Benefits/>
-    
-    // </section>
+
     <section
-    id="About"
-    className={`w-screen h-screen ${styles.sectionContainer} flex`}
-  >
-    <div className={`font-inter`}>
-      <div className="hidden lg:block">
-        <a className={`${styles.buttonBg}`}>Sample Text</a>
-      </div>
-      <div className="my-5">
-        <h2 className={`gradient-text text-white text-[54px]  font-semibold`}>
-          Benefits that we deliver.
-        </h2>
-      </div>
-      {/* <div className="px-10 pt-10 pb-0 border border-tashi-tertiary rounded-[30px]">
+      id="About"
+      className={`w-screen h-screen ${styles.sectionContainer} `}
+    >
+      <div className={`font-inter`}>
+        <div className="hidden lg:block">
+          <a className={`${styles.buttonBg}`}>Sample Text</a>
+        </div>
+        <div className="my-5">
+          <h2 className={`gradient-text text-white text-[54px]  font-semibold`}>
+            Benefits that we deliver.
+          </h2>
+        </div>
+        {/* <div className="px-10 pt-10 pb-0 border border-tashi-tertiary rounded-[30px]">
         <h3 className="text-white text-[26px] mb-5">Lower Cost</h3>
         <p className=" font-normal text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -52,12 +37,11 @@ function About() {
           </div>
         </div>
       </div> */}
-      <div className="grid grid-cols-2">
-      <Benefits/>
+        <div className="grid grid-cols-2">
+          <Content/>
+        </div>
       </div>
-     
-    </div>
-  </section>
+    </section>
   );
 }
 

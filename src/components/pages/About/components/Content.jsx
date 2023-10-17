@@ -1,7 +1,7 @@
 import React from "react";
-import content from "../content.json";
+import content from "./content.json";
 
-function Benefits() {
+function Content() {
   return (
     <div className="about-background border border-tashi-tertiary rounded-[30px]">
       <div className="grid grid-cols-2 gap-4  about-icon justify-center ">
@@ -25,4 +25,4 @@ function Benefits() {
   );
 }
 
-export default Benefits;
+export default Content;
