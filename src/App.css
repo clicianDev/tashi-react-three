@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.fade-border{
+    
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 550, from(#615076), to(#01031300));
+}
+
+.gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: white;
+    
+    /* Create the gradient. */
+    background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 550, from(#FFFFFF), to(#615076));
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+
+  .gradient-text-2 {
+    background: linear-gradient(91deg, #AF98CB 35%, #FFF 50%, #AF98CB 65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-background {
+    background-image: url("/public/images/background-hero.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .about-background {
+    background: url(/public/images/about/background.png),  -9.283px 0px / 101.887% 100% no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+  }

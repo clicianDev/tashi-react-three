@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+@layer utilities {
+    .tashi-nav-link {
+      @apply font-inter font-black text-sm text-white transition-colors delay-150 hover:text-gray-400 hover:delay-[0ms];
+    }
+  
+    .tashi-nav-social-media {
+      @apply opacity-70 transition-opacity delay-150 hover:opacity-100 hover:delay-[0ms];
+    }
+  
+    .tashi-nav-link-mobile {
+      @apply font-inter text-base leading-8 tracking-tight text-white transition-colors delay-150 hover:text-gray-400 hover:delay-[0ms];
+    }
+}
+
