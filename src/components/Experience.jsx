@@ -99,13 +99,13 @@ const Experience = (props) => {
         />
         <StarParticles />
         <CustomLights />
-        <Suspense fallback={<CanvasLoader />}>
+      
         <Model currentPage={currentPage}/>
         <Effects disableGamma>
           <unrealBloomPass threshold={1} strength={0.9} radius={0.8} />
         </Effects>
         <BakeShadows />
-      </Suspense>
+     
       {/* <Rig/> */}
       <Preload all />
     </group>
