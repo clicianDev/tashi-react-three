@@ -35,7 +35,7 @@ function Capabilities() {
         <div className="col-start-3 col-end-4 border border-tashi-tertiary rounded-3xl p-5">
           <div className="grid grid-rows-3 gap-1  text-left justify-start ">
             <div>
-              <img src={`./images/capabilities/icons/thunder.svg`} />
+              <img src={`./images/capabilities/icons/about.svg`} />
             </div>
             <div>
               <h3 className="text-white font-normal text-2xl">
@@ -52,7 +52,7 @@ function Capabilities() {
         <div className="col-start-1 col-end-2 border border-tashi-tertiary rounded-3xl p-5">
           <div className="grid grid-rows-3 gap-1  text-left justify-start ">
             <div>
-              <img src={`./images/capabilities/icons/thunder.svg`} />
+              <img src={`./images/capabilities/icons/server.svg`} />
             </div>
             <div>
               <h3 className="text-white font-normal text-2xl">
@@ -69,7 +69,7 @@ function Capabilities() {
         <div className="col-start-3 col-end-4 border border-tashi-tertiary rounded-3xl p-5">
           <div className="grid grid-rows-3 gap-1  text-left justify-start ">
             <div>
-              <img src={`./images/capabilities/icons/thunder.svg`} />
+              <img src={`./images/capabilities/icons/settings.svg`} />
             </div>
             <div>
               <h3 className="text-white font-normal text-2xl">
