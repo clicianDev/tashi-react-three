@@ -4,7 +4,7 @@ function Capabilities() {
   return (
     <section
       id="About"
-      className={`w-screen h-screen ${styles.sectionContainer} `}
+      className={`w-screen h-screen ${styles.sectionContainer} mt-20 sm:mt-5 lg:mt-0`}
     >
       <div className={` text-center py-12 font-inter `}>
         <div className="block mb-7">
@@ -14,8 +14,8 @@ function Capabilities() {
           Our Capabilities
         </h2>
       </div>
-      <div className="grid grid-cols-3 gap-10">
-        <div className="col-start-1 col-end-2 border border-tashi-tertiary rounded-3xl p-5">
+      <div className="grid grid-rows-2 sm:grid-cols-3 lg:grid-cols-3 gap-10">
+        <div className="lg:col-start-1 lg:col-end-2 border border-tashi-tertiary rounded-3xl p-5">
           <div className="grid grid-rows-3 gap-1  text-left justify-start ">
             <div>
               <img src={`./images/capabilities/icons/thunder.svg`} />
@@ -32,8 +32,8 @@ function Capabilities() {
             </div>
           </div>
         </div>
-        <div className="col-start-3 col-end-4 border border-tashi-tertiary rounded-3xl p-5">
-          <div className="grid grid-rows-3 gap-1  text-left justify-start ">
+        <div className="lg:col-start-3 g:col-end-4 border border-tashi-tertiary rounded-3xl p-5">
+          <div className="grid lgrid-rows-3 gap-1  text-left justify-start ">
             <div>
               <img src={`./images/capabilities/icons/about.svg`} />
             </div>
@@ -49,7 +49,7 @@ function Capabilities() {
             </div>
           </div>
         </div>
-        <div className="col-start-1 col-end-2 border border-tashi-tertiary rounded-3xl p-5">
+        <div className="lg:col-start-1 lg:col-end-2 border border-tashi-tertiary rounded-3xl p-5">
           <div className="grid grid-rows-3 gap-1  text-left justify-start ">
             <div>
               <img src={`./images/capabilities/icons/server.svg`} />
@@ -66,7 +66,7 @@ function Capabilities() {
             </div>
           </div>
         </div>
-        <div className="col-start-3 col-end-4 border border-tashi-tertiary rounded-3xl p-5">
+        <div className="lg:col-start-3 lg:col-end-4 border border-tashi-tertiary rounded-3xl p-5">
           <div className="grid grid-rows-3 gap-1  text-left justify-start ">
             <div>
               <img src={`./images/capabilities/icons/settings.svg`} />

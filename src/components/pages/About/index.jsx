@@ -13,7 +13,7 @@ function About() {
           <a className={`${styles.buttonBg}`}>Sample Text</a>
         </div>
         <div className="my-5">
-          <h2 className={`gradient-text text-white text-[54px]  font-semibold`}>
+          <h2 className={`gradient-text text-white text-5xl sm:text-5xl lg:text-[54px]  font-semibold py-5`}>
             Benefits that we deliver.
           </h2>
         </div>

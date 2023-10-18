@@ -8,7 +8,7 @@ function Content() {
         {content.map((item, index) => (
           <div
             key={index}
-            className="py-5 justify-center font-inter text-center px-10 "
+            className="py-5 justify-center font-inter text-center px-1 sm:px-2 lg:px-10 "
           >
             <img
               src={`./images/about/icons/${item.image}.svg`}
