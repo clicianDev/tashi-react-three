@@ -4,7 +4,7 @@ import { useFrame } from "@react-three/fiber";
 
 function Model(props) {
   const groups = useRef();
-  const mascot = useGLTF("./mascot/mascot.gltf");
+  const mascot = useGLTF("./mascot-opt/mascot.gltf");
   const { actions, names } = useAnimations(mascot.animations, groups);
 
   const [animationIndex, setAnimationIndex] = useState(2);
