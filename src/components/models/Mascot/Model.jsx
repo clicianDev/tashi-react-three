@@ -19,7 +19,7 @@ function Model(props) {
     animation2.reset().fadeIn(0.5).play();
     animation.reset().fadeIn(0.5).play();
 
-    // If shouldPlayAnimation1 is true, play Index(1) and then switch back to Index(2)
+    // If shouldPlayAnimation1 is true, play Index(0) and then switch back to Index(5)
     if (shouldPlayAnimation1) {
       setTimeout(() => {
         console.log(clickCount);
@@ -35,7 +35,7 @@ function Model(props) {
             setAnimationIndex(5);
           
         }
-      }, animation._clip.duration * 900); // Set the timeout to match the duration of Index(1) animation in milliseconds
+      }, animation._clip.duration * 800); // Set the timeout to match the duration of Index(1) animation in milliseconds
     }
 
     // Clean up the animation when the component unmounts or when the prop changes
