@@ -10,7 +10,7 @@ html, body, #root {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
+    background-color: #030214;
 }
 
 @layer utilities {
@@ -26,4 +26,3 @@ html, body, #root {
       @apply font-inter text-base leading-8 tracking-tight text-white transition-colors delay-150 hover:text-gray-400 hover:delay-[0ms];
     }
 }
-
