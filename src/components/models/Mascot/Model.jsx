@@ -29,14 +29,11 @@ function Model(props) {
           setAnimationIndex(3);
           setAnimationIndex2(9);
         } else {
-          if (clickCount >= 3) {
-            setAnimationIndex(4);
-            setAnimationIndex2(10);
-          } else {
+        
             // clickCount is odd
             setShouldPlayAnimation1(false);
             setAnimationIndex(5);
-          }
+          
         }
       }, animation._clip.duration * 900); // Set the timeout to match the duration of Index(1) animation in milliseconds
     }
@@ -48,6 +45,7 @@ function Model(props) {
   const handleClick = (e) => {
     setAnimationIndex(0);
     setAnimationIndex2(8);
+
     setClickCount(clickCount + 1);
     setShouldPlayAnimation1(true);
   };
