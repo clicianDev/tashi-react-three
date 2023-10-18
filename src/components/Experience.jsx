@@ -87,7 +87,7 @@ const Experience = (props) => {
 
   return (
     <group ref={scene} className="z-30">
-      <Suspense fallback={<CanvasLoader />}>
+     
         <Environment preset="night" />
         <PerspectiveCamera
           theatreKey="Camera"
@@ -99,7 +99,7 @@ const Experience = (props) => {
         />
         <StarParticles />
         <CustomLights />
-  
+        <Suspense fallback={<CanvasLoader />}>
         <Model currentPage={currentPage}/>
         <Effects disableGamma>
           <unrealBloomPass threshold={1} strength={0.9} radius={0.8} />

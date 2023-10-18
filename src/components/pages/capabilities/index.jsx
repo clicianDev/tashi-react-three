@@ -7,12 +7,12 @@ function Capabilities() {
       className={`w-screen h-screen ${styles.sectionContainer} `}
     >
       <div className={` text-center py-12 font-inter `}>
-        <div className="hidden lg:block mb-7">
+        <div className="block mb-7">
           <a className={`${styles.buttonBgTwo}`}>Integrations</a>
         </div>
-        <h1 className={`gradient-text-2 text-white text-[54px] font-semibold`}>
+        <h2 className={`gradient-text-2 text-white text-[54px] font-semibold`}>
           Our Capabilities
-        </h1>
+        </h2>
       </div>
       <div className="grid grid-cols-3 gap-10">
         <div className="col-start-1 col-end-2 border border-tashi-tertiary rounded-3xl p-5">
