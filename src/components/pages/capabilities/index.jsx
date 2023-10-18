@@ -32,7 +32,7 @@ function Capabilities() {
             </div>
           </div>
         </div>
-        <div className="lg:col-start-3 g:col-end-4 border border-tashi-tertiary rounded-3xl p-5">
+        <div className=" sm:col-start-3 sm:col-end-4  lg:col-start-3 lg:col-end-4 border border-tashi-tertiary rounded-3xl p-5">
           <div className="grid lgrid-rows-3 gap-1  text-left justify-start ">
             <div>
               <img src={`./images/capabilities/icons/about.svg`} />
@@ -49,7 +49,7 @@ function Capabilities() {
             </div>
           </div>
         </div>
-        <div className="lg:col-start-1 lg:col-end-2 border border-tashi-tertiary rounded-3xl p-5">
+        <div className="sm:col-start-1 sm:col-end-2 lg:col-start-1 lg:col-end-2 border border-tashi-tertiary rounded-3xl p-5">
           <div className="grid grid-rows-3 gap-1  text-left justify-start ">
             <div>
               <img src={`./images/capabilities/icons/server.svg`} />
@@ -66,7 +66,7 @@ function Capabilities() {
             </div>
           </div>
         </div>
-        <div className="lg:col-start-3 lg:col-end-4 border border-tashi-tertiary rounded-3xl p-5">
+        <div className="sm:col-start-3 sm:col-end-4 lg:col-start-3 lg:col-end-4 border border-tashi-tertiary rounded-3xl p-5">
           <div className="grid grid-rows-3 gap-1  text-left justify-start ">
             <div>
               <img src={`./images/capabilities/icons/settings.svg`} />
