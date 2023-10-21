@@ -13,6 +13,7 @@ import prodAni from "./CameraAnimation.json"
 import Capabilities from "./components/pages/capabilities";
 import CanvasLoader from "./components/Loader";
 import { Suspense } from "react";
+import Reviews from "./components/pages/Reviews";
 function App() {
   const sheet = getProject("Tashi Bear Animation", {state: prodAni}).sheet("TashiScene");
 
@@ -25,7 +26,7 @@ function App() {
         gl={{ preserveDrawingBuffer: true, antialias: true }}
       >  <Suspense fallback={<CanvasLoader />}>
         <color attach="background" args={["#0D0D26"]} />
-        <ScrollControls pages={5}>
+        <ScrollControls pages={4}>
           <SheetProvider sheet={sheet}>
             <Experience />
           </SheetProvider>
@@ -34,10 +35,15 @@ function App() {
             <Hero />
             <About />
             <Capabilities/>
+            <Reviews/>
+
           </Scroll>
         </ScrollControls>
+        
         </Suspense>
       </Canvas>
+
+
     </BrowserRouter>
   );
 }

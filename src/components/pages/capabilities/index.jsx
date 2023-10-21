@@ -3,12 +3,12 @@ import styles from "../../styles";
 function Capabilities() {
   return (
     <section
-      id="About"
-      className={`w-screen h-screen ${styles.sectionContainer} mt-20 sm:mt-5 lg:mt-0`}
+      id="Capabilities"
+      className={`w-screen h-screen ${styles.sectionContainer} mt-20 sm:mt-5 lg:mt-5`}
     >
-      <div className={` text-center py-12 font-inter `}>
+      <div className={` text-center  font-inter`}>
         <div className="block mb-7">
-          <a className={`${styles.buttonBgTwo}`}>Integrations</a>
+          <a className={`${styles.buttonBg}`}>Integrations</a>
         </div>
         <h2 className={`gradient-text-2 text-white text-[54px] font-semibold`}>
           Our Capabilities
