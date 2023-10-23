@@ -5,6 +5,13 @@ const CanvasLoader = (props) => {
 
   return (
     <Html>
+      <div className="cube">
+        <div/>
+        <div/>
+        <div/>
+        <div/>
+        <div/>
+      </div>
       <p className="text-sm text-white font-extrabold mt-10">
         {progress.toFixed(2)}%
       </p>
