@@ -16,6 +16,8 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    "no-eval": "off"
+    "no-eval": process.env.DISABLE_EVAL_RULE || "error",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
   },
 }
