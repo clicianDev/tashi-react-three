@@ -101,10 +101,10 @@ const Experience = (props) => {
         <CustomLights />
       
         <Model currentPage={currentPage}/>
-        <Effects disableGamma>
+        {/* <Effects disableGamma>
           <unrealBloomPass threshold={1} strength={0.9} radius={0.8} />
         </Effects>
-        <BakeShadows />
+        <BakeShadows /> */}
      
       {/* <Rig/> */}
       <Preload all />
