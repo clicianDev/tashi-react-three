@@ -96,7 +96,7 @@ const Experience = (props) => {
         far={70}
       /> 
      {/* <StarParticles /> */}
-      <CustomLights />
+      {/* <CustomLights /> */}
 
       <Model currentPage={currentPage} />
      <Effects disableNormalPass>
