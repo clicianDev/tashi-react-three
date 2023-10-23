@@ -100,8 +100,8 @@ const Experience = (props) => {
 
       <Model currentPage={currentPage} />
      <Effects disableGamma={true}>
-          <unrealBloomPass threshold={1} strength={0.9} radius={0.8} />
-          {/* <outputPass args={[THREE.ACESFilmicToneMapping]} /> */}
+          {/* <unrealBloomPass threshold={1} strength={0.9} radius={0.8} />
+          <outputPass args={[THREE.ACESFilmicToneMapping]} /> */}
         </Effects>
       {/* <Rig/> */}
       <Preload all />
