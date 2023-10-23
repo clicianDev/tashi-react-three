@@ -95,13 +95,13 @@ const Experience = (props) => {
         near={0.1}
         far={70}
       /> 
-     {/* <StarParticles /> */}
-      {/* <CustomLights /> */}
+     <StarParticles />
+      <CustomLights />
 
       <Model currentPage={currentPage} />
      <Effects disableNormalPass>
           <unrealBloomPass threshold={1} strength={0.9} radius={0.8} />
-          <outputPass args={[THREE.ACESFilmicToneMapping]} />
+          {/* <outputPass args={[THREE.ACESFilmicToneMapping]} /> */}
         </Effects>
         <EffectComposer   >
           <Bloom mipmapBlur luminanceThreshold={1} levels={8} intensity={0.40 * 4} />
