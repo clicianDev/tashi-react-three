@@ -103,7 +103,6 @@ const Experience = (props) => {
           <unrealBloomPass threshold={1} strength={0.7} radius={0.8} />
           <outputPass args={[THREE.ACESFilmicToneMapping]} />
         </Effects>
-        <BakeShadows /> 
       {/* <Rig/> */}
       <Preload all />
     </group>
