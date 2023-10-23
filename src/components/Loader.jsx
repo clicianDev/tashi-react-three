@@ -3,19 +3,10 @@ import { Html, useProgress } from "@react-three/drei";
 const CanvasLoader = (props) => {
   const { progress } = useProgress();
 
-
   return (
     <Html
-      as="div"
-      center
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-      }}
+    
     >
-  
       <div className="cube">
         <div></div>
         <div></div>
@@ -23,7 +14,7 @@ const CanvasLoader = (props) => {
         <div></div>
         <div></div>
       </div>
-      <span></span>
+      <br />
       <p
         style={{
           fontSize: 14,
