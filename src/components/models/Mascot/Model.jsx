@@ -13,29 +13,28 @@ function Model(props) {
   const [shouldPlayAnimation1, setShouldPlayAnimation1] = useState(false);
 
   useEffect(() => {
-    // Play the animation based on animationIndex
+   
     const animation = actions[names[animationIndex]];
     const animation2 = actions[names[animationIndex2]];
     animation2.reset().fadeIn(0.5).play();
     animation.reset().fadeIn(0.5).play();
-
-    // If shouldPlayAnimation1 is true, play Index(0) and then switch back to Index(5)
+ 
     if (shouldPlayAnimation1) {
       setTimeout(() => {
         if (clickCount % 2 === 0) {
-          // clickCount is even
+         
           setShouldPlayAnimation1(false);
           setAnimationIndex(3);
           setAnimationIndex2(9);
         } else {
-          // clickCount is odd
+         
           setShouldPlayAnimation1(false);
           setAnimationIndex(5);
         }
-      }, animation._clip.duration * 800); // Set the timeout to match the duration of Index(1) animation in milliseconds
+      }, animation._clip.duration * 800); 
     }
 
-    // Clean up the animation when the component unmounts or when the prop changes
+
     return () => animation.fadeOut(0.5);
   }, [animationIndex, actions, names, shouldPlayAnimation1]);
 
