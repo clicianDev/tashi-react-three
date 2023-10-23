@@ -27,7 +27,7 @@ function App() {
         dpr={[1, 2]}
         gl={{ preserveDrawingBuffer: true, antialias: true }}
       >
-        <Suspense >
+        <Suspense fallback={<CanvasLoader />}>
           <color attach="background" args={["#0D0D26"]} />
           <ScrollControls pages={4}>
             <SheetProvider sheet={sheet}>
