@@ -15,7 +15,7 @@ function Navbar() {
            <MobileNavList/>
           </div>
 
-          <span class="fade-border"></span>
+          <span className="fade-border"></span>
         </div>
       </nav>
     </header>

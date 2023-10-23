@@ -41,8 +41,7 @@ function Rig() {
 
 const Experience = (props) => {
   const [isMobile, setIsMobile] = useState(false);
-  const ref = useRef();
-  const bloomPass = new UnrealBloomPass()
+
   const scene = useRef();
 
   useEffect(() => {
@@ -95,13 +94,11 @@ const Experience = (props) => {
         fov={90}
         near={0.1}
         far={70}
-      />
-      <StarParticles />
+      /> 
+     {/* <StarParticles /> */}
       <CustomLights />
 
-      <Shape color="hotpink" position={[-2, 0, 0]}>
-        <planeGeometry args={[1.5, 1.5]} />
-      </Shape>
+      <Model currentPage={currentPage} />
      <Effects disableNormalPass>
           <unrealBloomPass threshold={1} strength={0.9} radius={0.8} />
           <outputPass args={[THREE.ACESFilmicToneMapping]} />
@@ -115,19 +112,5 @@ const Experience = (props) => {
     </group>
   );
 };
-
-function Shape({ children, color, ...props }) {
-  const [hovered, hover] = useState(true)
-  return (
-    <mesh {...props} onPointerOver={() => hover(false)} onPointerOut={() => hover(true)}>
-      {children}
-      {/* Now, in order to get selective bloom we simply crank colors out of
-        their natural spectrum. Where colors are normally defined between 0 - 1 we push them
-        way out of range, into a higher defintion (HDR). What previously was [1, 1, 1] now could
-        for instance be [10, 10, 10]. This requires that toneMapping is off, or it clamps to 1 */}
-      <meshStandardMaterial color={color} emissive={color} emissiveIntensity={!hovered ? 4 : 0} toneMapped={false} />
-    </mesh>
-  )
-}
 
 export default Experience;
