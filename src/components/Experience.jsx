@@ -18,7 +18,8 @@ import {
 
 import { UnrealBloomPass } from "three-stdlib";
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass'
-
+import { EffectComposer, Bloom, ToneMapping } from '@react-three/postprocessing'
+import { ToneMappingMode } from 'postprocessing'
 import Model from "./models/Mascot/Model";
 import Mascot from "./models/Mascot/Mascot";
 import { easing } from "maath";
@@ -41,7 +42,7 @@ function Rig() {
 const Experience = (props) => {
   const [isMobile, setIsMobile] = useState(false);
   const ref = useRef();
-
+  const bloomPass = new UnrealBloomPass()
   const scene = useRef();
 
   useEffect(() => {
@@ -99,10 +100,14 @@ const Experience = (props) => {
       <CustomLights />
 
       <Model currentPage={currentPage} />
-     <Effects disableGamma={true}>
-          {/* <unrealBloomPass threshold={1} strength={0.9} radius={0.8} />
-          <outputPass args={[THREE.ACESFilmicToneMapping]} /> */}
+     <Effects disableNormalPass>
+          <unrealBloomPass threshold={1} strength={0.9} radius={0.8} />
+          <outputPass args={[THREE.ACESFilmicToneMapping]} />
         </Effects>
+        <EffectComposer   >
+          <Bloom mipmapBlur luminanceThreshold={1} levels={8} intensity={0.40 * 4} />
+          <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
+        </EffectComposer>
       {/* <Rig/> */}
       <Preload all />
     </group>
