@@ -100,7 +100,7 @@ const Experience = (props) => {
 
       <Model currentPage={currentPage} />
      <Effects disableGamma={true}>
-          <unrealBloomPass threshold={1} strength={0.9} radius={0.8} />
+          <UnrealBloomPass threshold={1} strength={0.9} radius={0.8} />
         </Effects>
         <BakeShadows /> 
       {/* <Rig/> */}
