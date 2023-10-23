@@ -31,15 +31,12 @@ function App() {
             <Experience />
           </SheetProvider>
           <Scroll html>
-          
             <Hero />
             <About />
             <Capabilities/>
             <Reviews/>
-
           </Scroll>
         </ScrollControls>
-        
         </Suspense>
       </Canvas>
 

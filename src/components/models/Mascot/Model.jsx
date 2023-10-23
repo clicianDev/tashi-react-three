@@ -6,7 +6,7 @@ function Model(props) {
   const groups = useRef();
   const mascot = useGLTF("./mascot-v2/mascot.gltf");
   const { actions, names } = useAnimations(mascot.animations, groups);
-  console.log(actions);
+
   const [clickCount, setClickCount] = useState(0);
   const [animationIndex, setAnimationIndex] = useState(5);
   const [animationIndex2, setAnimationIndex2] = useState(10);
@@ -22,18 +22,15 @@ function Model(props) {
     // If shouldPlayAnimation1 is true, play Index(0) and then switch back to Index(5)
     if (shouldPlayAnimation1) {
       setTimeout(() => {
-        console.log(clickCount);
         if (clickCount % 2 === 0) {
           // clickCount is even
           setShouldPlayAnimation1(false);
           setAnimationIndex(3);
           setAnimationIndex2(9);
         } else {
-        
-            // clickCount is odd
-            setShouldPlayAnimation1(false);
-            setAnimationIndex(5);
-          
+          // clickCount is odd
+          setShouldPlayAnimation1(false);
+          setAnimationIndex(5);
         }
       }, animation._clip.duration * 800); // Set the timeout to match the duration of Index(1) animation in milliseconds
     }

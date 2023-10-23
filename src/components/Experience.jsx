@@ -74,7 +74,6 @@ const Experience = (props) => {
 
   function logCurrentPageCallback(scroll, callback) {
     const currentPage = Math.floor(scroll.offset * scroll.pages) + 1;
-   console.log("current page:", currentPage)
     callback(currentPage);
   }
 
@@ -87,25 +86,24 @@ const Experience = (props) => {
 
   return (
     <group ref={scene} className="z-30">
-     
-        <Environment preset="night" />
-        <PerspectiveCamera
-          theatreKey="Camera"
-          makeDefault
-          position={[0, 3.5, 1.85]}
-          fov={90}
-          near={0.1}
-          far={70}
-        />
-        <StarParticles />
-        <CustomLights />
-      
-        <Model currentPage={currentPage}/>
-        {/* <Effects disableGamma>
+      <Environment preset="night" />
+      <PerspectiveCamera
+        theatreKey="Camera"
+        makeDefault
+        position={[0, 3.5, 1.85]}
+        fov={90}
+        near={0.1}
+        far={70}
+      />
+      <StarParticles />
+      <CustomLights />
+
+      <Model currentPage={currentPage} />
+      {/* <Effects disableGamma>
           <unrealBloomPass threshold={1} strength={0.9} radius={0.8} />
         </Effects>
         <BakeShadows /> */}
-     
+
       {/* <Rig/> */}
       <Preload all />
     </group>

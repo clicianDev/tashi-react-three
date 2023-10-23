@@ -4,9 +4,17 @@ const CanvasLoader = (props) => {
   const { progress } = useProgress();
 
   return (
-    <Html
-    
-    >
+    // <Html
+    //   as="div"
+    //   center
+    //   style={{
+    //     display: "flex",
+    //     justifyContent: "center",
+    //     alignItems: "center",
+    //     flexDirection: "column",
+    //   }}
+    // >
+    <Html>
       <div className="cube">
         <div></div>
         <div></div>
@@ -14,15 +22,7 @@ const CanvasLoader = (props) => {
         <div></div>
         <div></div>
       </div>
-      <br />
-      <p
-        style={{
-          fontSize: 14,
-          color: "#F1F1F1",
-          fontWeight: 800,
-          marginTop: 40,
-        }}
-      >
+      <p className="text-sm text-white font-extrabold mt-10">
         {progress.toFixed(0)}%
       </p>
     </Html>
