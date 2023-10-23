@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect, useState, useRef } from "react";
-import * as THREE from 'three'
+import * as THREE from "three";
 import { extend, useFrame } from "@react-three/fiber";
 import CustomLights from "./models/CustomLights";
 import {
@@ -17,9 +17,13 @@ import {
 } from "@theatre/r3f";
 
 import { UnrealBloomPass } from "three-stdlib";
-import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass'
-import { EffectComposer, Bloom, ToneMapping } from '@react-three/postprocessing'
-import { ToneMappingMode } from 'postprocessing'
+import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass";
+import {
+  EffectComposer,
+  Bloom,
+  ToneMapping,
+} from "@react-three/postprocessing";
+import { ToneMappingMode } from "postprocessing";
 import Model from "./models/Mascot/Model";
 import Mascot from "./models/Mascot/Mascot";
 import { easing } from "maath";
@@ -94,19 +98,24 @@ const Experience = (props) => {
         fov={90}
         near={0.1}
         far={70}
-      /> 
-     <StarParticles />
+      />
+      <StarParticles />
       <CustomLights />
 
       <Model currentPage={currentPage} />
-     {/* <Effects disableNormalPass>
-          <unrealBloomPass threshold={1} strength={0.9} radius={0.8} />
-          <outputPass args={[THREE.ACESFilmicToneMapping]} />
-        </Effects>
-        <EffectComposer   >
-          <Bloom mipmapBlur luminanceThreshold={1} levels={8} intensity={0.40 * 4} />
-          <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
-        </EffectComposer> */}
+      <Effects disableNormalPass>
+        <unrealBloomPass threshold={1} strength={0.9} radius={0.8} />
+        <outputPass args={[THREE.ACESFilmicToneMapping]} />
+      </Effects>
+      <EffectComposer>
+        <Bloom
+          mipmapBlur
+          luminanceThreshold={1}
+          levels={8}
+          intensity={0.4 * 4}
+        />
+        <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
+      </EffectComposer>
       {/* <Rig/> */}
       <Preload all />
     </group>
