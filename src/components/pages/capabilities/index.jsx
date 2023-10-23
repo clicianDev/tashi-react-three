@@ -4,7 +4,7 @@ function Capabilities() {
   return (
     <section
       id="Capabilities"
-      className={`w-screen h-screen ${styles.sectionContainer} mt-20 sm:mt-5 lg:mt-5`}
+      className={`w-screen h-screen ${styles.sectionContainer} mt-20 sm:mt-5 lg:mt-5 lg:overflow-visible overflow-auto`}
     >
       <div className={` text-center  font-inter`}>
         <div className="block mb-7">
