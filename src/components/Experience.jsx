@@ -99,14 +99,14 @@ const Experience = (props) => {
       <CustomLights />
 
       <Model currentPage={currentPage} />
-     <Effects disableNormalPass>
+     {/* <Effects disableNormalPass>
           <unrealBloomPass threshold={1} strength={0.9} radius={0.8} />
-          {/* <outputPass args={[THREE.ACESFilmicToneMapping]} /> */}
+          <outputPass args={[THREE.ACESFilmicToneMapping]} />
         </Effects>
         <EffectComposer   >
           <Bloom mipmapBlur luminanceThreshold={1} levels={8} intensity={0.40 * 4} />
           <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
-        </EffectComposer>
+        </EffectComposer> */}
       {/* <Rig/> */}
       <Preload all />
     </group>
