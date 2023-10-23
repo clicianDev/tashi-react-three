@@ -1,11 +1,9 @@
 import React, { Suspense, useEffect, useState, useRef } from "react";
-import CanvasLoader from "./Loader";
+import * as THREE from 'three'
 import { extend, useFrame } from "@react-three/fiber";
 import CustomLights from "./models/CustomLights";
 import {
-  OrbitControls,
   Preload,
-  Html,
   Effects,
   BakeShadows,
   Environment,
@@ -19,13 +17,15 @@ import {
 } from "@theatre/r3f";
 
 import { UnrealBloomPass } from "three-stdlib";
+import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass'
+
 import Model from "./models/Mascot/Model";
 import Mascot from "./models/Mascot/Mascot";
 import { easing } from "maath";
 import StarParticles from "./models/Particles/StarParticles";
 import { useAtom } from "jotai";
 import { currentPageAtom } from "../GlobalState";
-extend({ UnrealBloomPass });
+extend({ UnrealBloomPass, OutputPass });
 
 function Rig() {
   return useFrame((state, delta) => {
@@ -100,7 +100,8 @@ const Experience = (props) => {
 
       <Model currentPage={currentPage} />
      <Effects disableGamma={true}>
-          <UnrealBloomPass threshold={1} strength={0.9} radius={0.8} />
+          <unrealBloomPass threshold={1} strength={0.7} radius={0.8} />
+          <outputPass args={[THREE.ACESFilmicToneMapping]} />
         </Effects>
         <BakeShadows /> 
       {/* <Rig/> */}
