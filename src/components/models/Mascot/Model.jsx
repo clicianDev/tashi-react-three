@@ -17,6 +17,12 @@ function Model(props) {
     const animation = actions[animationName];
     const animation2 = actions[animationName2];
     switch (props.currentPage) {
+
+      case 1:
+        if (animationName != "Idle" ) {
+          setAnimationName("Idle");
+          setAnimationName2("Idle_key");
+        }
       case 2:
         if (animationName != "Discussing_anim" ) {
           setAnimationName("Discussing_anim");
