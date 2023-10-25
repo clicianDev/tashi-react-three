@@ -28,8 +28,7 @@
     "react-scramble": "^0.5.1",
     "tailwindcss": "^3.3.3",
     "three": "^0.155.0",
-    "three-stdlib": "^2.28.0",
-    "vite-plugin-chunk-split": "^0.4.7"
+    "three-stdlib": "^2.28.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
