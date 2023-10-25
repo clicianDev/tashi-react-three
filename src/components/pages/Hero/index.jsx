@@ -6,7 +6,7 @@ function Hero() {
  
   return (
     <section id="hero" className={`w-screen h-screen ${styles.sectionContainer} `}>
-      <div className={` text-center pt-[150px] justify-center `}>
+      <div className={` text-center pt-10 justify-center `}>
         <h1 className={`font-inter gradient-text  text-5xl sm:text-5xl lg:text-[54px] lg:leading-[50px] leading-none font-semibold pb-5`}>
         <Scramble
         speed="slow"

@@ -21,7 +21,6 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar />
       <Canvas
         shadows
         dpr={[1, 2]}
@@ -34,6 +33,7 @@ function App() {
               <Experience />
             </SheetProvider>
             <Scroll html>
+              <Navbar />
               <Hero />
               <About />
               <Capabilities />
