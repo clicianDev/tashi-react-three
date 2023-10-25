@@ -9,49 +9,47 @@ function Model(props) {
   console.log(actions);
   const [clickCount, setClickCount] = useState(0);
   const [animationName, setAnimationName] = useState("Meditate");
-  const [animationName2, setAnimationName2] = useState("Meditate_key");
+  const [shapekey, setShapekey] = useState("Meditate_key");
   const [shouldPlayAnimation1, setShouldPlayAnimation1] = useState(false);
+  const [shouldStopAnimation, setShouldStopAnimation] = useState(false);
 
+  useEffect(() => {
+    switch (props.currentPage) {
+      case 1:
+        setAnimationName("Meditate");
+        setShapekey("Meditate_key");
+        break;
+      case 2:
+        setAnimationName("Discussing_anim");
+        setShapekey("Discussing_key");
+        break;
+      case 3:
+        setAnimationName("Idle");
+        setShapekey("Idle_key");
+        break;
+    }
+  }, [props.currentPage]);
 
   useEffect(() => {
     const animation = actions[animationName];
-    const animation2 = actions[animationName2];
-    switch (props.currentPage) {
+    const animation2 = actions[shapekey];
 
-      case 1:
-        if (animationName != "Idle" ) {
-          setAnimationName("Idle");
-          setAnimationName2("Idle_key");
-        }
-      case 2:
-        if (animationName != "Discussing_anim" ) {
-          setAnimationName("Discussing_anim");
-          setAnimationName2("Discussing_key");
-        }
-      
-        break;
-      case 3:
-        if (animationName != "Idle") {
-          setAnimationName("Idle");
-          setAnimationName2("Idle_key");
-        }
-        break;
-    }
-  
-   
     console.log(animation2);
     animation2.reset().fadeIn(0.5).play();
     animation.reset().fadeIn(0.5).play();
 
+    if (shouldStopAnimation) {
+      animation.fadeOut(0.5).stop();
+    }
     if (shouldPlayAnimation1) {
       setTimeout(() => {
         if (clickCount % 2 === 0) {
           setAnimationName("Meditate");
-          setAnimationName2("Meditate_key");
+          setShapekey("Meditate_key");
           setShouldPlayAnimation1(false);
         } else {
           setAnimationName("Idle");
-          setAnimationName2("Idle_key");
+          setShapekey("Idle_key");
           setShouldPlayAnimation1(false);
         }
       }, animation._clip.duration * 800);
@@ -61,13 +59,15 @@ function Model(props) {
       animation.fadeOut(0.5);
       animation2.fadeOut(0.5);
     };
-  }, [animationName, animationName2, shouldPlayAnimation1, props.currentPage]);
+  }, [animationName, shapekey, shouldPlayAnimation1, shouldStopAnimation]);
 
   const handleClick = (e) => {
-    setAnimationName("Falling");
-    setAnimationName2("Falling_Key");
-    setClickCount(clickCount + 1);
-    setShouldPlayAnimation1(true);
+    if (props.currentPage === 1 || props.currentPage === 3 ) {
+      setAnimationName("Falling");
+      setShapekey("Falling_Key");
+      setClickCount(clickCount + 1);
+      setShouldPlayAnimation1(true);
+    }
   };
 
   return (
