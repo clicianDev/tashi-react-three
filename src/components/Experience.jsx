@@ -103,7 +103,7 @@ const Experience = (props) => {
       <CustomLights />
 
       <Model currentPage={currentPage} />
-      <Effects disableNormalPass disableGamma>
+      {/* <Effects disableNormalPass disableGamma>
         <unrealBloomPass threshold={1} strength={0.7} radius={0.8} />
         <outputPass args={[THREE.ACESFilmicToneMapping]} />
       </Effects>
@@ -115,7 +115,7 @@ const Experience = (props) => {
           intensity={0.4 * 4}
         />
         <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
-      </EffectComposer>
+      </EffectComposer> */}
       {/* <Rig/> */}
       <Preload all />
     </group>
