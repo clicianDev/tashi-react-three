@@ -5,7 +5,7 @@ import { useFrame } from "@react-three/fiber";
 
 function Model(props) {
   const groups = useRef();
-  const mascot = useGLTF("models/mascot-v3-meshopt/mascot.gltf");
+  const mascot = useGLTF("models/mascot.glb");
   const { actions, names } = useAnimations(mascot.animations, groups);
   console.log(actions);
   const [clickCount, setClickCount] = useState(0);
@@ -79,6 +79,6 @@ function Model(props) {
     </>
   );
 }
-useGLTF.preload("models/mascot-v3-meshopt/mascot.gltf");
+useGLTF.preload("models/mascot.glb");
 export default Model;
 
