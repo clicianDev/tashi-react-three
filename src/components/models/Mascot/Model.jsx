@@ -81,3 +81,4 @@ function Model(props) {
 
 export default Model;
 
+useGLTF.preload('/mascot-v3-meshopt/mascot.gltf');
