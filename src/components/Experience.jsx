@@ -102,7 +102,7 @@ const Experience = (props) => {
       <StarParticles />
       <CustomLights />
 
-      <Model currentPage={currentPage} />
+      {/* <Model currentPage={currentPage} /> */}
       <Effects disableNormalPass disableGamma>
         <unrealBloomPass threshold={1} strength={0.7} radius={0.8} />
         <outputPass args={[THREE.ACESFilmicToneMapping]} />
