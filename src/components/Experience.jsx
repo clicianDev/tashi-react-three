@@ -1,14 +1,8 @@
-import React, { Suspense, useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import * as THREE from "three";
 import { extend, useFrame } from "@react-three/fiber";
 import CustomLights from "./models/CustomLights";
-import {
-  Preload,
-  Effects,
-  BakeShadows,
-  Environment,
-  useScroll,
-} from "@react-three/drei";
+import { Preload, Effects, Environment, useScroll } from "@react-three/drei";
 import { val } from "@theatre/core";
 import {
   editable as e,
@@ -25,7 +19,6 @@ import {
 } from "@react-three/postprocessing";
 import { ToneMappingMode } from "postprocessing";
 import Model from "./models/Mascot/Model";
-import Mascot from "./models/Mascot/Mascot";
 import { easing } from "maath";
 import StarParticles from "./models/Particles/StarParticles";
 import { useAtom } from "jotai";
