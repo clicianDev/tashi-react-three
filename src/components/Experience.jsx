@@ -83,7 +83,7 @@ const Experience = (props) => {
 
   return (
     <group ref={scene} className="z-30">
-      <Environment preset="night" />
+      {/* <Environment preset="night" /> */}
       <PerspectiveCamera
         theatreKey="Camera"
         makeDefault
