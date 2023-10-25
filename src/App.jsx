@@ -9,7 +9,7 @@ import { editable as e, SheetProvider } from "@theatre/r3f";
 import Navbar from "./components/navbar";
 import Hero from "./components/pages/Hero";
 import About from "./components/pages/About";
-import prodAni from "./CameraAnimation.json";
+import prodAni from "./prodAni.json";
 import Capabilities from "./components/pages/capabilities";
 import CanvasLoader from "./components/Loader";
 import { Suspense } from "react";

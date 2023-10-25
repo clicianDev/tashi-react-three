@@ -7,6 +7,7 @@ export default {
     extend: {
       fontFamily: {
         inter: ['Inter'],
+        custom: ['CustomFontName']
       },
 
       colors: {

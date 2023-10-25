@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'CustomFontName';
+  src: url('/public/fonts/AncientEgyptianHieroglyphs.otf') format('opentype');
+  /* Add different formats for compatibility as needed */
+  font-weight: normal;
+  font-style: normal;
+}
 
 html, body, #root {
     width: 100%;

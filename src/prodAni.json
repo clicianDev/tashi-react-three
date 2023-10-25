@@ -16,21 +16,8 @@
                 "__debugName": "Camera:[\"position\",\"x\"]",
                 "keyframes": [
                   {
-                    "id": "Pupk9eN3A3",
+                    "id": "c5IrLNaDug",
                     "position": 0,
-                    "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.25,
-                      0.46
-                    ],
-                    "type": "bezier",
-                    "value": 0
-                  },
-                  {
-                    "id": "usidSZ0hHw",
-                    "position": 1.867,
                     "connectedRight": true,
                     "handles": [
                       0.5,
@@ -39,11 +26,24 @@
                       0
                     ],
                     "type": "bezier",
-                    "value": -0.48944317705109863
+                    "value": 0
                   },
                   {
-                    "id": "-fKVa8eQZn",
-                    "position": 4.267,
+                    "id": "H2N_e9tz-z",
+                    "position": 2.833,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "type": "bezier",
+                    "value": -0.45999999999999963
+                  },
+                  {
+                    "id": "SA_Aa5mQHL",
+                    "position": 6.033,
                     "connectedRight": true,
                     "handles": [
                       0.5,
@@ -61,21 +61,21 @@
                 "__debugName": "Camera:[\"position\",\"y\"]",
                 "keyframes": [
                   {
-                    "id": "XJ-Lu2fPI7",
+                    "id": "FU4tTPe5Ba",
                     "position": 0,
                     "connectedRight": true,
                     "handles": [
                       0.5,
                       1,
-                      0.25,
-                      0.46
+                      0.5,
+                      0
                     ],
                     "type": "bezier",
-                    "value": 2.359999999999996
+                    "value": 1.8699999999999994
                   },
                   {
-                    "id": "MXZzkLGIwB",
-                    "position": 1.867,
+                    "id": "BJjbaDYXNy",
+                    "position": 2.833,
                     "connectedRight": true,
                     "handles": [
                       0.5,
@@ -84,20 +84,7 @@
                       0
                     ],
                     "type": "bezier",
-                    "value": 1.8111429523687987
-                  },
-                  {
-                    "id": "ltWYWuGbD-",
-                    "position": 4.267,
-                    "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
-                    "type": "bezier",
-                    "value": 1.720000000000001
+                    "value": 1.3899999999999986
                   }
                 ]
               },
@@ -106,21 +93,21 @@
                 "__debugName": "Camera:[\"position\",\"z\"]",
                 "keyframes": [
                   {
-                    "id": "CDo4SIDQ2n",
+                    "id": "_TDM9uNyQq",
                     "position": 0,
                     "connectedRight": true,
                     "handles": [
                       0.5,
                       1,
-                      0.25,
-                      0.46
+                      0.5,
+                      0
                     ],
                     "type": "bezier",
-                    "value": 1.8500000000000003
+                    "value": 2.25
                   },
                   {
-                    "id": "duBjXN-Ogd",
-                    "position": 1.867,
+                    "id": "Bdm6r1bVTl",
+                    "position": 2.833,
                     "connectedRight": true,
                     "handles": [
                       0.5,
@@ -129,11 +116,11 @@
                       0
                     ],
                     "type": "bezier",
-                    "value": 2.03
+                    "value": 2.5899999999999976
                   },
                   {
-                    "id": "u2n88yWm9y",
-                    "position": 4.267,
+                    "id": "rjiZcIp4ny",
+                    "position": 6.033,
                     "connectedRight": true,
                     "handles": [
                       0.5,
@@ -142,7 +129,7 @@
                       0
                     ],
                     "type": "bezier",
-                    "value": 1.7600000000000002
+                    "value": 1.6799999999999973
                   }
                 ]
               },
@@ -151,7 +138,7 @@
                 "__debugName": "Camera:[\"rotation\",\"x\"]",
                 "keyframes": [
                   {
-                    "id": "T_Gq8AsbQU",
+                    "id": "4iv0aGqoWw",
                     "position": 0,
                     "connectedRight": true,
                     "handles": [
@@ -164,8 +151,8 @@
                     "value": 0
                   },
                   {
-                    "id": "O1doha8NgG",
-                    "position": 0.033,
+                    "id": "HT8o0nKEen",
+                    "position": 2.833,
                     "connectedRight": true,
                     "handles": [
                       0.5,
@@ -183,7 +170,7 @@
                 "__debugName": "Camera:[\"rotation\",\"y\"]",
                 "keyframes": [
                   {
-                    "id": "xOcVn8IzU0",
+                    "id": "zD5qI3dTPy",
                     "position": 0,
                     "connectedRight": true,
                     "handles": [
@@ -196,8 +183,8 @@
                     "value": 0
                   },
                   {
-                    "id": "MpxM4YqVO7",
-                    "position": 0.033,
+                    "id": "YuD4Pz-tA0",
+                    "position": 2.833,
                     "connectedRight": true,
                     "handles": [
                       0.5,
@@ -206,24 +193,11 @@
                       0
                     ],
                     "type": "bezier",
-                    "value": 0
+                    "value": 0.55
                   },
                   {
-                    "id": "4l65pZ3dvI",
-                    "position": 1.867,
-                    "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
-                    "type": "bezier",
-                    "value": 0.4298988928776314
-                  },
-                  {
-                    "id": "Jqc1_8un1D",
-                    "position": 4.267,
+                    "id": "5ANIOPrwxt",
+                    "position": 6.033,
                     "connectedRight": true,
                     "handles": [
                       0.5,
@@ -241,7 +215,7 @@
                 "__debugName": "Camera:[\"rotation\",\"z\"]",
                 "keyframes": [
                   {
-                    "id": "yAkJ-c7h1s",
+                    "id": "CPeGGNEvaV",
                     "position": 0,
                     "connectedRight": true,
                     "handles": [
@@ -254,8 +228,8 @@
                     "value": 0
                   },
                   {
-                    "id": "8zheSRXASC",
-                    "position": 0.033,
+                    "id": "-i862Y-b-m",
+                    "position": 2.833,
                     "connectedRight": true,
                     "handles": [
                       0.5,
@@ -326,6 +300,8 @@
   },
   "definitionVersion": "0.4.0",
   "revisionHistory": [
+    "HfYpE01OMiiuSM0J",
+    "Qe_E1UcTjVLfpmxE",
     "Uga-nMJQ7l9cNd0g",
     "ruVJPeMd-G4W3w7y"
   ]

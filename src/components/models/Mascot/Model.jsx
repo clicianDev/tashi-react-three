@@ -4,44 +4,62 @@ import { useFrame } from "@react-three/fiber";
 
 function Model(props) {
   const groups = useRef();
-  const mascot = useGLTF("./mascot-v2-meshopt/mascot.gltf");
+  const mascot = useGLTF("./mascot-v3/mascot.gltf");
   const { actions, names } = useAnimations(mascot.animations, groups);
-
+  console.log(actions);
   const [clickCount, setClickCount] = useState(0);
-  const [animationIndex, setAnimationIndex] = useState(5);
-  const [animationIndex2, setAnimationIndex2] = useState(10);
+  const [animationName, setAnimationName] = useState("Meditate");
+  const [animationName2, setAnimationName2] = useState("Meditate_key");
   const [shouldPlayAnimation1, setShouldPlayAnimation1] = useState(false);
 
+
   useEffect(() => {
+    const animation = actions[animationName];
+    const animation2 = actions[animationName2];
+    switch (props.currentPage) {
+      case 2:
+        if (animationName != "Discussing_anim" ) {
+          setAnimationName("Discussing_anim");
+          setAnimationName2("Discussing_key");
+        }
+      
+        break;
+      case 3:
+        if (animationName != "Idle") {
+          setAnimationName("Idle");
+          setAnimationName2("Idle_key");
+        }
+        break;
+    }
+  
    
-    const animation = actions[names[animationIndex]];
-    const animation2 = actions[names[animationIndex2]];
+    console.log(animation2);
     animation2.reset().fadeIn(0.5).play();
     animation.reset().fadeIn(0.5).play();
- 
+
     if (shouldPlayAnimation1) {
       setTimeout(() => {
         if (clickCount % 2 === 0) {
-         
+          setAnimationName("Meditate");
+          setAnimationName2("Meditate_key");
           setShouldPlayAnimation1(false);
-          setAnimationIndex(3);
-          setAnimationIndex2(9);
         } else {
-         
+          setAnimationName("Idle");
+          setAnimationName2("Idle_key");
           setShouldPlayAnimation1(false);
-          setAnimationIndex(5);
         }
-      }, animation._clip.duration * 800); 
+      }, animation._clip.duration * 800);
     }
 
-
-    return () => animation.fadeOut(0.5);
-  }, [animationIndex, actions, names, shouldPlayAnimation1]);
+    return () => {
+      animation.fadeOut(0.5);
+      animation2.fadeOut(0.5);
+    };
+  }, [animationName, animationName2, shouldPlayAnimation1, props.currentPage]);
 
   const handleClick = (e) => {
-    setAnimationIndex(0);
-    setAnimationIndex2(8);
-
+    setAnimationName("Falling");
+    setAnimationName2("Falling_Key");
     setClickCount(clickCount + 1);
     setShouldPlayAnimation1(true);
   };
@@ -54,5 +72,5 @@ function Model(props) {
     </>
   );
 }
-useGLTF.preload("./mascot-v2-meshopt/mascot.gltf");
+useGLTF.preload("./mascot-v3/mascot.gltf");
 export default Model;
