@@ -22,7 +22,7 @@ html, body, #root {
 
 @layer utilities {
     .tashi-nav-link {
-      @apply font-inter font-black text-sm text-white transition-colors delay-150 hover:text-gray-400 hover:delay-[0ms];
+      @apply font-inter font-normal text-sm text-white transition-colors delay-150 hover:text-gray-400 hover:delay-[0ms];
     }
   
     .tashi-nav-social-media {
