@@ -5,7 +5,7 @@ function Reviews() {
     return ( 
         <section
         id="Reviews"
-        className={`w-screen h-screen ${styles.sectionContainer} mt-20 sm:mt-5 lg:mt-5 bg-[#030214] py-20`}
+        className={`w-screen h-screen ${styles.sectionContainer} mt-20 sm:mt-5 lg:mt-5`}
       >
         <div className={` text-center  font-inter`}>
           <div className="block mb-7">

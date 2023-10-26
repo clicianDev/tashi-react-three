@@ -23,6 +23,7 @@ import { easing } from "maath";
 import StarParticles from "./models/Particles/StarParticles";
 import { useAtom } from "jotai";
 import { currentPageAtom } from "../GlobalState";
+import Room from "./models/Room/Room";
 extend({ UnrealBloomPass, OutputPass });
 
 function Rig() {
