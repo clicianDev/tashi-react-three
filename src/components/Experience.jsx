@@ -9,7 +9,7 @@ import {
   PerspectiveCamera,
   useCurrentSheet,
 } from "@theatre/r3f";
-
+import Room from "./models/Room/Room";
 import { UnrealBloomPass } from "three-stdlib";
 import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass";
 import {
@@ -96,6 +96,7 @@ const Experience = (props) => {
       <CustomLights />
 
       <Model currentPage={currentPage} />
+      <Room/>
       <Effects disableNormalPass disableGamma>
         <unrealBloomPass threshold={1} strength={0.7} radius={0.8} />
         <outputPass args={[THREE.ACESFilmicToneMapping]} />
