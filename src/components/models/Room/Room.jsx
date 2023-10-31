@@ -2,7 +2,7 @@ import {React, useRef, useEffect} from 'react';
 import { useGLTF, useAnimations } from "@react-three/drei";
 function Room() {
   const groups = useRef();
-    const room = useGLTF("models/round_platform.glb");
+    const room = useGLTF("models/room-2.glb");
 //     const { actions, names } = useAnimations(room.animations, groups);
 
 // useEffect(() => {
@@ -18,5 +18,5 @@ function Room() {
       </>
      );
 }
-useGLTF.preload("models/round_platform.glb");
+useGLTF.preload("models/room-2.glb");
 export default Room;

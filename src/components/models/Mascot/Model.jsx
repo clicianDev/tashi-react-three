@@ -64,8 +64,8 @@ function Model(props) {
 
   const handleClick = (e) => {
     if (props.currentPage === 1 || props.currentPage === 3 ) {
-      setAnimationName("Batting_anim");
-      setShapekey("Batting_key");
+      setAnimationName("Falling");
+      setShapekey("Falling_Key");
       setClickCount(clickCount + 1);
       setShouldPlayAnimation1(true);
     }
