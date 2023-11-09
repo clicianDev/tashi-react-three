@@ -12,8 +12,7 @@ function Benefits() {
           Benefits that we deliver.
         </h1>
         <p className="font-normal text-lg text-center text-white lg:px-96">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-          suscipit semper nunc, a ultricies neque imperdiet et.
+        Tashi simplifies the game dev backend while offering many benefits to game studios
         </p>
       </div>
       <Content/>

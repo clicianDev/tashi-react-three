@@ -8,6 +8,10 @@ import Benefits from "./components/pages/Home/Benefits";
 import Meter from "./components/pages/Home/Meter";
 import Solutions from "./components/pages/Home/Solutions";
 import Features from "./components/pages/Home/Features";
+import GameStack from "./components/pages/Home/GameStack";
+import Integrate from "./components/pages/Home/Integrate";
+import Faqs from "./components/pages/Home/Faqs";
+import Contact from "./components/pages/Home/Contact";
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +22,10 @@ function App() {
       <Benefits/>
       <Solutions/>
       <Features/>
+      <GameStack/>
+      <Integrate/>
+      <Faqs/>
+      <Contact/>
     </BrowserRouter>
   );
 }

@@ -94,7 +94,13 @@ function MobileNavList() {
           </div>
         </div>
       </div>
+      <div className="flex gap-5">
+          <img src="/images/navbar/icons/discord.svg"/>
+          <img src="/images/navbar/icons/reddit.svg"/>
+          <img src="/images/navbar/icons/twitter.svg"/>
+        </div>
       <div className="hidden lg:block">
+     
         <a className={`${styles.buttonBg}`}>Contact Us</a>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import CircularGauge from "./CircularGauge";
 
 function Data() {
   return (
@@ -14,6 +15,7 @@ function Data() {
       <div className="text-center relative">
         <div className="absolute mt-[-30%]">
           <img src="/images/meter.svg" />
+          {/* <CircularGauge/> */}
         </div>
         <h3 className="text-white text-[40px] leading-normal font-semibold">
           ~50%

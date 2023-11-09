@@ -6,7 +6,7 @@ function Partners() {
     <section>
       <div className="my-5">
         <h2 className="font-inter text-center text-2xl text-white">
-          Our Partner
+          Our Partners
         </h2>
       </div>
 
