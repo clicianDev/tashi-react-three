@@ -1,25 +1,25 @@
 [
     {
         "title": "Lower Cost",
-        "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi suscipit semp",
+        "Description": "Tashi simplifies the game dev backend while offering many benefits to game studios",
         "image": "lower-cost"
         
     },
     {
         "title": "Simple Game Architecture",
-        "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi suscipit semp",
+        "Description": "SDK that directly plugs into the Unity editor",
         "image": "simple-game-architecture"
         
     },
     {
         "title": "Reduce Cheating",
-        "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi suscipit semp",
+        "Description": "Fair ordering and time stamp on all game events negates all state edit and lag related cheats",
         "image": "reduce-cheating"
         
     },
     {
         "title": "Fast and Secure",
-        "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi suscipit semp",
+        "Description": "Minimal consensus latency and highest throughput in the industry",
         "image": "fast-and-secure"
         
         
