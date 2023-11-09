@@ -16,8 +16,8 @@ html, body, #root {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #030214;
+    overflow-x: hidden;
+    background-color: #010313;
 }
 
 @layer utilities {

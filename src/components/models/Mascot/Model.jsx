@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useAnimations, useGLTF } from "@react-three/drei";
+import { useAnimations, useGLTF,  } from "@react-three/drei";
 
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useGraph } from "@react-three/fiber";
+import { useMemo } from "react";
+import { SkeletonUtils } from "three-stdlib";
 
 function Model(props) {
   const groups = useRef();
@@ -9,27 +11,30 @@ function Model(props) {
   const { actions, names } = useAnimations(mascot.animations, groups);
   console.log(actions);
   const [clickCount, setClickCount] = useState(0);
-  const [animationName, setAnimationName] = useState("Meditate");
-  const [shapekey, setShapekey] = useState("Meditate_key");
+  const [animationName, setAnimationName] = useState("Discussing_anim");
+  const [shapekey, setShapekey] = useState("Discussing_key");
   const [shouldPlayAnimation1, setShouldPlayAnimation1] = useState(false);
   const [shouldStopAnimation, setShouldStopAnimation] = useState(false);
 
-  useEffect(() => {
-    switch (props.currentPage) {
-      case 1:
-        setAnimationName("Meditate");
-        setShapekey("Meditate_key");
-        break;
-      case 2:
-        setAnimationName("Discussing_anim");
-        setShapekey("Discussing_key");
-        break;
-      case 3:
-        setAnimationName("Idle");
-        setShapekey("Idle_key");
-        break;
-    }
-  }, [props.currentPage]);
+  const clone = useMemo(() => SkeletonUtils.clone(mascot.scene), [mascot.scene])
+
+  const {nodes} = useGraph(clone)
+  // useEffect(() => {
+  //   switch (props.currentPage) {
+  //     case 1:
+  //       setAnimationName("Meditate");
+  //       setShapekey("Meditate_key");
+  //       break;
+  //     case 2:
+  //       setAnimationName("Discussing_anim");
+  //       setShapekey("Discussing_key");
+  //       break;
+  //     case 3:
+  //       setAnimationName("Idle");
+  //       setShapekey("Idle_key");
+  //       break;
+  //   }
+  // }, [props.currentPage]);
 
   useEffect(() => {
     const animation = actions[animationName];
@@ -63,18 +68,18 @@ function Model(props) {
   }, [animationName, shapekey, shouldPlayAnimation1, shouldStopAnimation]);
 
   const handleClick = (e) => {
-    if (props.currentPage === 1 || props.currentPage === 3 ) {
+   
       setAnimationName("Falling");
       setShapekey("Falling_Key");
       setClickCount(clickCount + 1);
       setShouldPlayAnimation1(true);
-    }
+   
   };
 
   return (
     <>
       <mesh ref={groups} castShadow receiveShadow onClick={handleClick}>
-        <primitive object={mascot.scene} position={[0, 0, 0]} />
+        <primitive object={mascot.scene} position={[0, -0.5, 0]} scale={[1.35,1.35,1.35]} />
       </mesh>
     </>
   );

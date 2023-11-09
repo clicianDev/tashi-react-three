@@ -47,17 +47,25 @@
 }
 
 .gradient-text-2 {
-  background: linear-gradient(91deg, #af98cb 35%, #fff 50%, #af98cb 65%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: rgb(175,152,203);
+  background: linear-gradient(90deg, rgba(175,152,203,1) 0%, rgba(255,255,255,1) 50%, rgba(175,152,203,1) 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .hero-background {
-  background-image: url("/public/images/background-hero.png");
+  background-image: url("/public/images/bg-hero.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.violet-background {
+  background-image: url("/public/images/violet-bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
 }
 
 .about-background {

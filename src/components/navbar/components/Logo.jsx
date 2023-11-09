@@ -6,7 +6,7 @@ function Logo() {
       <a aria-label="Home" href="/">
         <img
           className="mx-auto h-12"
-          src="/images/logos/logo.svg"
+          src="/images/logo/logo.svg"
           type="image/svg+xml"
           alt="Logo"
         />

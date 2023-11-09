@@ -1,47 +1,23 @@
 import { useState, useRef } from "react";
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
-import Experience from "./components/Experience";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { ScrollControls, Scroll, Html } from "@react-three/drei";
-import { getProject, val } from "@theatre/core";
-import { editable as e, SheetProvider } from "@theatre/r3f";
 import Navbar from "./components/navbar";
-import Hero from "./components/pages/Hero";
-import About from "./components/pages/About";
-import prodAni from "./prodAni.json";
-import Capabilities from "./components/pages/capabilities";
-import CanvasLoader from "./components/Loader";
-import { Suspense } from "react";
-import Reviews from "./components/pages/Reviews";
+import Hero from "./components/pages/Home/Hero";
+import Partners from "./components/pages/Home/Partners";
+import Benefits from "./components/pages/Home/Benefits";
+import Meter from "./components/pages/Home/Meter";
+import Solutions from "./components/pages/Home/Solutions";
+import Features from "./components/pages/Home/Features";
 function App() {
-  const sheet = getProject("Tashi Bear Animation", { state: prodAni }).sheet(
-    "TashiScene"
-  );
-
   return (
     <BrowserRouter>
-      <Canvas
-        shadows
-        dpr={[1, 2]}
-        gl={{ preserveDrawingBuffer: true, antialias: true }}
-      >
-        <Suspense fallback={<CanvasLoader />}>
-          <color attach="background" args={["#0D0D26"]} />
-          <ScrollControls pages={4}>
-            <SheetProvider sheet={sheet}>
-              <Experience />
-            </SheetProvider>
-            <Scroll html>
-              <Navbar />
-              <Hero />
-              <About />
-              <Capabilities />
-              <Reviews />
-            </Scroll>
-          </ScrollControls>
-        </Suspense>
-      </Canvas>
+      <Navbar />
+      <Hero />
+      <Partners/>
+      <Meter/>
+      <Benefits/>
+      <Solutions/>
+      <Features/>
     </BrowserRouter>
   );
 }

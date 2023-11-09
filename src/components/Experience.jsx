@@ -1,15 +1,16 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, Suspense } from "react";
 import * as THREE from "three";
-import { extend, useFrame } from "@react-three/fiber";
+import { extend, useFrame, Canvas } from "@react-three/fiber";
 import CustomLights from "./models/CustomLights";
-import { Preload, Effects, Environment, useScroll } from "@react-three/drei";
-import { val } from "@theatre/core";
+import CanvasLoader from "./Loader";
 import {
-  editable as e,
+  Preload,
+  Effects,
+  Environment,
+  useScroll,
   PerspectiveCamera,
-  useCurrentSheet,
-} from "@theatre/r3f";
-import Room from "./models/Room/Room";
+} from "@react-three/drei";
+import { val } from "@theatre/core";
 import { UnrealBloomPass } from "three-stdlib";
 import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass";
 import {
@@ -21,8 +22,7 @@ import { ToneMappingMode } from "postprocessing";
 import Model from "./models/Mascot/Model";
 import { easing } from "maath";
 import StarParticles from "./models/Particles/StarParticles";
-import { useAtom } from "jotai";
-import { currentPageAtom } from "../GlobalState";
+
 extend({ UnrealBloomPass, OutputPass });
 
 function Rig() {
@@ -62,57 +62,61 @@ const Experience = (props) => {
     };
   }, []);
 
-  const sheet = useCurrentSheet();
-  const scroll = useScroll();
+  // const sheet = useCurrentSheet();
+  // const scroll = useScroll();
 
-  const [currentPage, setCurrentPage] = useAtom(currentPageAtom);
+  // const [currentPage, setCurrentPage] = useAtom(currentPageAtom);
 
-  const sequenceLength = val(sheet.sequence.pointer.length);
+  // const sequenceLength = val(sheet.sequence.pointer.length);
 
-  function logCurrentPageCallback(scroll, callback) {
-    const currentPage = Math.floor(scroll.offset * scroll.pages) + 1;
-    callback(currentPage);
-  }
+  // function logCurrentPageCallback(scroll, callback) {
+  //   const currentPage = Math.floor(scroll.offset * scroll.pages) + 1;
+  //   callback(currentPage);
+  // }
 
-  useFrame(() => {
-    if (scroll) {
-      logCurrentPageCallback(scroll, setCurrentPage);
-      sheet.sequence.position = scroll.offset * sequenceLength;
-    }
-  });
+  // useFrame(() => {
+  //   if (scroll) {
+  //     logCurrentPageCallback(scroll, setCurrentPage);
+  //     sheet.sequence.position = scroll.offset * sequenceLength;
+  //   }
+  // });
 
   return (
-    <group ref={scene} className="z-30">
-      {/* <Environment preset="night" /> */}
-      <PerspectiveCamera
-        theatreKey="Camera"
-        makeDefault
-        position={[0, 3.5, 1.85]}
-        fov={90}
-        near={0.1}
-        far={70}
-      />
-      <StarParticles />
-      <CustomLights />
-
-      <Model currentPage={currentPage} />
-      <Room/>
-      <Effects disableNormalPass disableGamma>
-        <unrealBloomPass threshold={1} strength={0.7} radius={0.8} />
-        <outputPass args={[THREE.ACESFilmicToneMapping]} />
-      </Effects>
-      <EffectComposer>
-        <Bloom
-          mipmapBlur
-          luminanceThreshold={1}
-          levels={8}
-          intensity={0.4 * 4}
+    <Canvas
+      shadows
+      dpr={[1, 2]}
+      gl={{ preserveDrawingBuffer: true, antialias: true }}
+    >
+      <Suspense fallback={<CanvasLoader />}>
+        {/* <Environment preset="night" /> */}
+        <PerspectiveCamera
+          makeDefault
+          position={[0, 1, 1.85]}
+          fov={90}
+          near={0.1}
+          far={70}
         />
-        <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
-      </EffectComposer>
-      {/* <Rig/> */}
-      <Preload all />
-    </group>
+        {/* <StarParticles /> */}
+        <CustomLights />
+        <Model />
+        {/* <Modelv2/> */}
+        {/* <Effects disableNormalPass disableGamma>
+          <unrealBloomPass threshold={1} strength={0.7} radius={0.8} />
+          <outputPass args={[THREE.ACESFilmicToneMapping]} />
+        </Effects> */}
+        <EffectComposer>
+          {/* <Bloom
+            mipmapBlur
+            luminanceThreshold={1}
+            levels={8}
+            intensity={0.4 * 4}
+          /> */}
+          <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
+        </EffectComposer>
+        {/* <Rig /> */}
+        <Preload all />
+      </Suspense>
+    </Canvas>
   );
 };
 

@@ -1,0 +1,38 @@
+import React from "react";
+
+function Data() {
+  return (
+    <div className="grid grid-cols-3  p-20 w-full h-full gap-0">
+      <div className="">
+        <h3 className="text-white text-[40px] leading-normal font-semibold">
+          1mm+
+        </h3>
+        <p className="text-white text-[20px] leading-normal font-normal opacity-[0.7]">
+          Game Event Per Second
+        </p>
+      </div>
+      <div className="text-center relative">
+        <div className="absolute mt-[-30%]">
+          <img src="/images/meter.svg" />
+        </div>
+        <h3 className="text-white text-[40px] leading-normal font-semibold">
+          ~50%
+        </h3>
+        <p className="text-white text-[20px] leading-normal font-normal opacity-[0.7]">
+          Decrease in Network
+          <br /> Egress Cost
+        </p>
+      </div>
+      <div className="text-right">
+        <h3 className="text-white text-[40px] leading-normal font-semibold">
+          30-50ms
+        </h3>
+        <p className="text-white text-[20px] leading-normal font-normal opacity-[0.7]">
+          Consensus Latency
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default Data;
