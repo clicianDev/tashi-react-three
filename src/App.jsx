@@ -12,6 +12,7 @@ import GameStack from "./components/pages/Home/GameStack";
 import Integrate from "./components/pages/Home/Integrate";
 import Faqs from "./components/pages/Home/Faqs";
 import Contact from "./components/pages/Home/Contact";
+import Footer from "./components/footer";
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +27,7 @@ function App() {
       <Integrate/>
       <Faqs/>
       <Contact/>
+      <Footer/>
     </BrowserRouter>
   );
 }
