@@ -16,8 +16,8 @@ function Content() {
                 className="m-auto"
               />
               <div className="text-white">
-                <h1 className="font-bold ">{item.title}</h1>
-                <p>{item.Description}</p>
+                <h3 className="font-bold ">{item.title}</h3>
+                <p className="px-5">{item.Description}</p>
               </div>
             </div>
           ))}
