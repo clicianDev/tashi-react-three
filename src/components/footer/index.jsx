@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer>
           <span className="fade-border"></span>
-      <div className={`m-auto w-full z-50 py-8 ${styles.sectionContainer}`}>
+      <div className={`m-auto w-full z-50 py-8 ${styles.sectionContainer} m-auto max-w-7xl`}>
         <div className="flex justify-between mb-5">
           <Logo />
           <NavList />

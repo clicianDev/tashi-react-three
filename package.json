@@ -16,7 +16,7 @@
     "@theatre/core": "^0.7.0",
     "@theatre/r3f": "^0.7.0",
     "@theatre/studio": "^0.7.0",
-    "@types/three": "^0.156.0",
+    "@types/three": "^0.158.2",
     "autoprefixer": "^10.4.16",
     "jotai": "^2.4.3",
     "maath": "^0.10.4",

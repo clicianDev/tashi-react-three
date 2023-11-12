@@ -55,17 +55,17 @@ background-clip: text;
 }
 
 .hero-background {
-  background-image: url("/public/images/bg-hero.svg");
-  background-size: cover;
+  background-image: url("/public/images/background-hero.png");
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: right;
 }
 
 .violet-background {
-  background-image: url("/public/images/violet-bg.svg");
+  background-image: url("/public/images/violet-bg.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
 }
 
 .sample-background {

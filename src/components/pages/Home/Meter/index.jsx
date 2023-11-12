@@ -5,9 +5,10 @@ function Meter() {
   return (
     <section
       id="Meter"
-      className={`w-screen h-screen ${styles.sectionContainer} violet-background `}
+      className={`w-screen h-screen ${styles.sectionContainer} violet-background m-auto max-w-7xl`}
     >
-        <div className="my-28 font-inter">
+      
+         <div className="my-28 font-inter">
             <h1 className="justify-center gradient-text-2 text-center text-[54px] leading-[60px] font-semibold p-5">
                 Fastest Consensus <br/> Engine in the gaming industry
             </h1>
@@ -17,6 +18,8 @@ function Meter() {
         </div>
          
         <Data/>
+     
+       
     </section>
   );
 }

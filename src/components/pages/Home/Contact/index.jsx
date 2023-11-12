@@ -1,12 +1,12 @@
 import React from "react";
 import styles
  from "../../../styles";
-import Experience2 from "../../../Experience2";
+
 function Contact() {
   return (
     <section
       id="Features"
-      className={`w-screen h-screen ${styles.sectionContainer}  py-20 flex hero-background`}
+      className={`w-screen h-screen ${styles.sectionContainer}  py-20 flex hero-background m-auto max-w-7xl`}
     >
       <div className="p-20 w-full">
         <h2 className="gradient-text-2 text-[54px] leading-[60px] font-semibold p-5 mb-10">

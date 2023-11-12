@@ -3,7 +3,7 @@ import PartnersList from "./components/PartnersList";
 
 function Partners() {
   return (
-    <section>
+    <section className="max-w-7xl m-auto">
       <div className="my-5">
         <h2 className="font-inter text-center text-2xl text-white">
           Our Partners

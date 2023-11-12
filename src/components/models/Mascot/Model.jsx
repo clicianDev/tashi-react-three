@@ -75,7 +75,8 @@ function Model(props) {
       setShouldPlayAnimation1(true);
    
   };
-
+  console.log(mascot.materials); 
+  console.log(Object.keys(mascot.materials)); 
   return (
     <>
       <mesh ref={groups} castShadow receiveShadow onClick={handleClick}>

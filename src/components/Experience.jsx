@@ -22,7 +22,9 @@ import { ToneMappingMode } from "postprocessing";
 import Model from "./models/Mascot/Model";
 import { easing } from "maath";
 import StarParticles from "./models/Particles/StarParticles";
-
+import { Mascot } from "./models/Mascot/Mascot";
+import { Test } from "./models/Mascot/Test";
+import { Test2 } from "./models/Mascot/Test2";
 extend({ UnrealBloomPass, OutputPass });
 
 function Rig() {
@@ -85,7 +87,7 @@ const Experience = (props) => {
     <Canvas
       shadows
       dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true, antialias: true }}
+      gl={{ preserveDrawingBuffer: true, }}
     >
       <Suspense fallback={<CanvasLoader />}>
         {/* <Environment preset="night" /> */}
@@ -98,8 +100,11 @@ const Experience = (props) => {
         />
         {/* <StarParticles /> */}
         <CustomLights />
-        <Model />
-        {/* <Modelv2/> */}
+       {/* <Model/>  */}
+        {/* <Mascot /> */}
+        <Test/>
+        {/* <Test2/> */}
+
         {/* <Effects disableNormalPass disableGamma>
           <unrealBloomPass threshold={1} strength={0.7} radius={0.8} />
           <outputPass args={[THREE.ACESFilmicToneMapping]} />
@@ -114,7 +119,6 @@ const Experience = (props) => {
           <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
         </EffectComposer>
         {/* <Rig /> */}
-        <Preload all />
       </Suspense>
     </Canvas>
   );
