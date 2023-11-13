@@ -5,8 +5,11 @@ import Experience from "../../../Experience";
 
 function Hero() {
   return (
-    <section id="hero" className={`max-w-7xl m-auto w-screen h-screen relative hero-background flex items-center`}>
-      
+    <section
+      id="hero"
+      className={`m-auto w-auto h-auto relative `}
+    >
+      <div className={`max-w-7xl m-auto relative flex items-center gap-5 h-screen hero-background ${styles.sectionContainer}  w-screen `}>
         <div className="block lg:absolute m-auto w-auto z-10 text-center md:text-left lg:text-left p-10 md:p-5 lg:p-0 ">
           <h1
             className={`font-inter gradient-text-2 text-4xl lg:text-5xl lg:leading-[50px] leading-none font-semibold pb-5`}
@@ -39,8 +42,9 @@ function Hero() {
             </a>
           </div>
         </div>
-      <div className="absolute lg:block w-full h-full m-auto">
-        <Experience />
+        <div className="absolute lg:block w-full h-full mx-32">
+          <Experience />
+        </div>
       </div>
     </section>
   );

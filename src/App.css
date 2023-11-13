@@ -56,9 +56,9 @@ background-clip: text;
 
 .hero-background {
   background-image: url("/public/images/background-hero.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
     
 }
 
