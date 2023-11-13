@@ -84,11 +84,7 @@ const Experience = (props) => {
   // });
 
   return (
-    <Canvas
-      shadows
-      dpr={[1, 2]}
-      gl={{  }}
-    >
+    <Canvas>
       <Suspense fallback={<CanvasLoader />}>
         {/* <Environment preset="night" /> */}
         <PerspectiveCamera
