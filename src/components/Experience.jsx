@@ -24,7 +24,7 @@ import { easing } from "maath";
 import StarParticles from "./models/Particles/StarParticles";
 import { Mascot } from "./models/Mascot/Mascot";
 import { Test } from "./models/Mascot/Test";
-import { Test2 } from "./models/Mascot/Test2";
+
 extend({ UnrealBloomPass, OutputPass });
 
 function Rig() {

@@ -9,7 +9,7 @@ function NavList() {
           <a
             key={index}
             className="p-2 tashi-nav-link"
-            href="https://medium.com/tashi-gg"
+            href={`/${item.path}`}
           >
             <span className="relative z-10">{item.title}</span>
           </a>

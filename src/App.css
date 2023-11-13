@@ -42,7 +42,7 @@
   /* This will show the gradient as a text color rather than element bg. */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
+
   -moz-text-fill-color: transparent;
 }
 
@@ -56,9 +56,10 @@ background-clip: text;
 
 .hero-background {
   background-image: url("/public/images/background-hero.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
+    
 }
 
 .violet-background {

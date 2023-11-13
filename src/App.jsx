@@ -1,34 +1,19 @@
-import { useState, useRef } from "react";
+import React from "react";
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
-import Navbar from "./components/navbar";
-import Hero from "./components/pages/Home/Hero";
-import Partners from "./components/pages/Home/Partners";
-import Benefits from "./components/pages/Home/Benefits";
-import Meter from "./components/pages/Home/Meter";
-import Solutions from "./components/pages/Home/Solutions";
-import Features from "./components/pages/Home/Features";
-import GameStack from "./components/pages/Home/GameStack";
-import Integrate from "./components/pages/Home/Integrate";
-import Faqs from "./components/pages/Home/Faqs";
-import Contact from "./components/pages/Home/Contact";
-import Footer from "./components/footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Layout from "./components/layout";
 function App() {
   return (
     
     <BrowserRouter>
-      <Navbar />
-      <Hero />
-      <Partners/>
-      <Meter/>
-      <Benefits/>
-      <Solutions/>
-      <Features/>
-      <GameStack/>
-      <Integrate/>
-      <Faqs/>
-      <Contact/>
-      <Footer/>
+    <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about-us" element={<About />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }

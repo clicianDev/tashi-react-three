@@ -1,17 +1,22 @@
 [
     {
-        "title": "About Us"
+        "title": "About Us",
+        "path": "about-us"
     },
     {
-        "title": "Blog"
+        "title": "Blog",
+        "path": "blog"
     },
     {
-        "title": "Careers"
+        "title": "Careers",
+        "path": "careers"
     },
     {
         "title": "Documentation"
+        ,"path": "documentation"
     },
     {
-        "title": "Roadmap"
+        "title": "Roadmap",
+        "path": "roadmap"
     }
 ]
