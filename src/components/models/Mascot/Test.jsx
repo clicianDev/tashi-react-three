@@ -9,11 +9,16 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 export function Test(props) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("/models/test.glb");
-  const { actions } = useAnimations(animations, group);
+  const { actions, names } = useAnimations(animations, group);
   console.log(actions);
   const [animationName, setAnimationName] = useState("Discussing_anim");
-  // const animation = actions[animationName];
-  // actions[animationName].fadeIn(0.5).play();
+
+  useEffect(() => {
+    // Reset and fade in animation after an index has been changed
+    actions[names[1]].reset().fadeIn(0.5).play()
+    // In the clean-up phase, fade it out
+    return () => actions[names[index]].fadeOut(0.5)
+  }, [ actions, names])
 
   return (
     <group ref={group} {...props} dispose={null}>

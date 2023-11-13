@@ -105,15 +105,15 @@ const Experience = (props) => {
           <unrealBloomPass threshold={1} strength={0.7} radius={0.8} />
           <outputPass args={[THREE.ACESFilmicToneMapping]} />
         </Effects> */}
-        <EffectComposer>
+        {/* <EffectComposer> */}
           {/* <Bloom
             mipmapBlur
             luminanceThreshold={1}
             levels={8}
             intensity={0.4 * 4}
           /> */}
-          <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
-        </EffectComposer>
+          {/* <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
+        </EffectComposer> */}
         {/* <Rig /> */}
       </Suspense>
     </Canvas>
