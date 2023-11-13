@@ -56,15 +56,15 @@ background-clip: text;
 
 .hero-background {
   background-image: url("/public/images/background-hero.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: left 50%;
     
 }
 
 .violet-background {
   background-image: url("/public/images/violet-bg.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }

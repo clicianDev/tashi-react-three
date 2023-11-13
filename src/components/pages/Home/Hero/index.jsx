@@ -7,12 +7,12 @@ function Hero() {
   return (
     <section
       id="hero"
-      className={`m-auto w-auto h-auto relative `}
+      className={`max-w-screen-2xl m-auto relative h-screen flex items-center hero-background ${styles.sectionContainer} `}
     >
-      <div className={`max-w-7xl m-auto relative flex items-center gap-5 h-screen hero-background ${styles.sectionContainer}  w-screen `}>
-        <div className="block lg:absolute m-auto w-auto z-10 text-center md:text-left lg:text-left p-10 md:p-5 lg:p-0 ">
+     
+        <div className={` z-10 text-center md:text-left lg:text-left `}>
           <h1
-            className={`font-inter gradient-text-2 text-4xl lg:text-5xl lg:leading-[50px] leading-none font-semibold pb-5`}
+            className={`font-inter gradient-text-2 text-4xl lg:text-5xl xl:text-5xl 2xl:text-7xl lg:leading-[50px] leading-none font-semibold pb-5`}
           >
             <span>Tashi Protocol</span>
             {/* <Scramble
@@ -42,10 +42,10 @@ function Hero() {
             </a>
           </div>
         </div>
-        <div className="absolute lg:block w-full h-full mx-32">
+        <div className="absolute w-full h-screen mx-32">
           <Experience />
         </div>
-      </div>
+  
     </section>
   );
 }

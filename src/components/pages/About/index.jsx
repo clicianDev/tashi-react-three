@@ -7,9 +7,9 @@ function About() {
     <>
     <section
         id="Team"
-        className={`relative max-w-7xl m-auto w-full h-full ${styles.sectionContainer}`}
+        className={`relative max-w-screen-2xl m-auto w-full h-full ${styles.sectionContainer} violet-background bg-contain bg-top`}
       >
-        <div className="relative font-inter violet-background py-20">
+        <div className="relative font-inter  py-20">
           <h1 className="justify-center gradient-text-2 text-center text-[54px] leading-[60px] font-semibold p-5">
             Tashi's Team
           </h1>

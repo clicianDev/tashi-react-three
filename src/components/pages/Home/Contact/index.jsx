@@ -6,7 +6,7 @@ function Contact() {
   return (
     <section
       id="Features"
-      className={`w-screen h-screen ${styles.sectionContainer}  py-20 flex hero-background m-auto max-w-7xl`}
+      className={`h-screen w-screen ${styles.sectionContainer}  py-20 flex hero-background m-auto max-w-screen-2xl`}
     >
       <div className="p-20 w-full">
         <h2 className="gradient-text-2 text-[54px] leading-[60px] font-semibold p-5 mb-10">

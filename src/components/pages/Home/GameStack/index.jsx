@@ -5,7 +5,7 @@ function GameStack() {
   return (
     <section
       id="Features"
-      className={`w-screen h-screen ${styles.sectionContainer}  m-auto max-w-7xl`}
+      className={`max-w-screen-2xl m-auto h-full ${styles.sectionContainer}`}
     >
       <div>
         <h2 className="justify-center gradient-text-2 text-center text-[54px] leading-[60px] font-semibold p-5">

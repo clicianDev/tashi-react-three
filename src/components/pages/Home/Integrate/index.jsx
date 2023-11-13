@@ -3,7 +3,7 @@ import styles
  from '../../../styles';
 function Integrate() {
     return ( 
-        <section id="Integrate"  className={`max-w-7xl m-auto w-screen h-screen ${styles.sectionContainer} violet-background  grid grid-cols-2 my-10 gap-10`}>
+        <section id="Integrate"  className={`max-w-screen-2xl m-auto h-full ${styles.sectionContainer} violet-background  grid grid-cols-2 my-10 gap-10`}>
               <div className='w-full justify-center my-20 '>
             <img src='images/integrate.svg' className='m-auto'/>
         </div>

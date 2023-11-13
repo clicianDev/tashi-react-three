@@ -6,7 +6,7 @@ import NavList from "./components/NavList";
 import MobileNavList from "./components/mobile/MobileNavList";
 function Navbar() {
   return (
-    <header className="relative max-w-7xl m-auto">
+    <header className="relative max-w-screen-2xl m-auto">
       <nav>
         <div className={`absolute m-auto w-full z-50 py-8 ${styles.sectionContainer}`}>
           <div className="flex justify-between mb-5">

@@ -5,9 +5,9 @@ function Benefits() {
   return (
     <section
       id="Benefits"
-      className={`max-w-7xl m-auto w-screen h-screen ${styles.sectionContainer} violet-background my-20`}
+      className={`max-w-screen-2xl m-auto h-full ${styles.sectionContainer} violet-background `}
     >
-      <div className="my-28 font-inter">
+      <div className="font-inter">
         <h1 className="justify-center gradient-text-2 text-center text-[54px] leading-[60px] font-semibold p-5">
           Benefits that we deliver.
         </h1>
