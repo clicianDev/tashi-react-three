@@ -87,7 +87,7 @@ const Experience = (props) => {
     <Canvas
       shadows
       dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true, }}
+      gl={{  }}
     >
       <Suspense fallback={<CanvasLoader />}>
         {/* <Environment preset="night" /> */}
