@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <header className="relative max-w-7xl m-auto">
       <nav>
-        <div className={`absolute m-auto w-full z-50 py-8 ${styles.sectionContainer}`}>
+        <div className={`m-auto w-full z-50 py-8 ${styles.sectionContainer}`}>
           <div className="flex justify-between mb-5">
             <Logo/>
             <NavList/>

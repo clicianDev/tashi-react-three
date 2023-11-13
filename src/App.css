@@ -76,15 +76,15 @@ background-clip: text;
   background-position: center;
 }
 
-.about-background {
-  background: url(/public/images/about/background.png),
+.benefits-background {
+  background: url("/public/images/benefits/background.png"),
     -9.283px 0px / 101.887% 100% no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.about-icon {
-  background-image: url("/public/images/about/Logo.svg");
+.benefits-icon {
+  background-image: url("/public/images/benefits/Logo.svg");
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;

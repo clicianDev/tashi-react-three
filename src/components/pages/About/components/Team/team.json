@@ -1,0 +1,71 @@
+{
+    "Head": [
+      {
+        "name": "Sandeep Bhatia",
+        "position": "CEO",
+        "url": "https://www.linkedin.com/company/tashigg/",
+        "imgPath": "sandeep-bhatia"
+      },
+      {
+        "name": "Jay McCarthy",
+        "position": "CBO",
+        "url": "https://www.linkedin.com/company/tashigg/",
+        "imgPath": "jay-mccarthy"
+      },
+      {
+        "name": "Ken Anderson",
+        "position": "CTO",
+        "url": "https://www.linkedin.com/company/tashigg/",
+        "imgPath": "ken-anderson"
+      },
+      {
+        "name": "Amar Bedi",
+        "position": "ops Lead",
+        "url": "https://www.linkedin.com/company/tashigg/",
+        "imgPath": "amar-bedi"
+      }
+    ],
+    "Employee": [
+      {
+        "name": "Steve Marshall",
+        "position": "Product & Delivery Lead",
+        "url": "https://www.linkedin.com/company/tashigg/"
+      },
+      {
+        "name": "Skyler Ross",
+        "position": "Consensus Engineer",
+        "url": "https://www.linkedin.com/company/tashigg/"
+      },
+      {
+        "name": "Sean Tedrow",
+        "position": "Consensus Engine Lead",
+        "url": "https://www.linkedin.com/company/tashigg/"
+      },
+      {
+        "name": "Steven Joruk",
+        "position": "Senior Product Engineer",
+        "url": "https://www.linkedin.com/company/tashigg/"
+      },
+      {
+        "name": "Majesty Guia",
+        "position": "Admin Lead",
+        "url": "https://www.linkedin.com/company/tashigg/"
+      },
+      {
+        "name": "Emil Lager",
+        "position": "Unity Lead",
+        "url": "https://www.linkedin.com/company/tashigg/"
+      },
+      {
+        "name": "Austin Bonander",
+        "position": "Unity Lead",
+        "url": "https://www.linkedin.com/company/tashigg/"
+      },
+      {
+        "name": "Vijet Malik",
+        "position": "Community Lead",
+        "url": "https://www.linkedin.com/company/tashigg/"
+      }
+    ]
+  }
+  
