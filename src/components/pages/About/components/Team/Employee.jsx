@@ -3,7 +3,7 @@ import Team from "./team.json";
 
 function Employee() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-full my-10 md:my-20 px-5 md:px-10 lg:px-20">
+    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5 w-full my-10 md:my-20 px-5 md:px-10 lg:px-20">
       {Team.Employee.map((item, index) => (
         <div
           key={index}
