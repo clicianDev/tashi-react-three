@@ -3,7 +3,7 @@ import CircularGauge from "./CircularGauge";
 
 function Data() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5 md:p-10 lg:p-20 gap-5 mt-10 md:mt-20">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5 md:p-10 lg:p-20 gap-5 mt-20 md:mt-20">
       <div className="text-center">
         <h3 className="text-white text-2xl md:text-3xl lg:text-4xl leading-normal font-semibold">
           1mm+

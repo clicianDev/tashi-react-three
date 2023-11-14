@@ -7,12 +7,12 @@ function Hero() {
   return (
     <section
       id="hero"
-      className={`max-w-screen-2xl m-auto relative h-screen flex items-center hero-background ${styles.sectionContainer} `}
+      className={`max-w-screen-2xl m-auto relative h-screen flex items-center hero-background bg-center lg:bg-right xl:bg-right 2xl:bg-right${styles.sectionContainer} `}
     >
      
         <div className={` z-10 text-center md:text-left lg:text-left`}>
           <h1
-            className={`font-inter gradient-text-2 text-4xl lg:text-5xl xl:text-5xl 2xl:text-7xl lg:leading-[50px] leading-none font-semibold pb-5`}
+            className={`font-inter gradient-text-2 text-5xl lg:text-5xl xl:text-5xl 2xl:text-7xl lg:leading-[50px] leading-none font-semibold pb-5`}
           >
             <span>Tashi Protocol</span>
             {/* <Scramble
