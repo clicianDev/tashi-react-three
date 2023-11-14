@@ -7,10 +7,10 @@ function Hero() {
   return (
     <section
       id="hero"
-      className={`max-w-screen-2xl m-auto relative h-screen flex items-center hero-background bg-center lg:bg-right xl:bg-right 2xl:bg-right${styles.sectionContainer} `}
+      className={`max-w-screen-2xl m-auto relative h-full flex items-center hero-background bg-center lg:bg-right xl:bg-right 2xl:bg-right${styles.sectionContainer} `}
     >
      
-        <div className={` z-10 text-center md:text-left lg:text-left`}>
+        <div className={`z-10 text-center md:text-left lg:text-left py-32`}>
           <h1
             className={`font-inter gradient-text-2 text-5xl lg:text-5xl xl:text-5xl 2xl:text-7xl lg:leading-[50px] leading-none font-semibold pb-5`}
           >
@@ -42,7 +42,7 @@ function Hero() {
             </a>
           </div>
         </div>
-        <div className="absolute w-full h-screen mx-auto lg:mx-32">
+        <div className="absolute w-full h-[300px] md:h-[500px] lg:h-[600px] xl:h-[700px] ">
           <Experience />
         </div>
   

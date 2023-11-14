@@ -19,7 +19,7 @@ import {
   ToneMapping,
 } from "@react-three/postprocessing";
 import { ToneMappingMode } from "postprocessing";
-import Model from "./models/Mascot/Model";
+import Model from "./models/Mascot/Model2";
 import { easing } from "maath";
 import StarParticles from "./models/Particles/StarParticles";
 
@@ -36,7 +36,7 @@ function Rig() {
   });
 }
 
-const Experience = (props) => {
+const Experience2 = (props) => {
   const [isMobile, setIsMobile] = useState(false);
 
   const scene = useRef();
@@ -116,4 +116,4 @@ const Experience = (props) => {
   );
 };
 
-export default Experience;
+export default Experience2;

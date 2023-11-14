@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../../../styles";
 import Experience from "../../../Experience";
+import Experience3 from "../../../Experience3";
 
 function Contact() {
   return (
@@ -8,7 +9,7 @@ function Contact() {
       id="Features"
       className={`relative h-screen px-10 md:px-28 lg:px-32 mx-auto flex items-center gap-5 hero-background overflow-hidden m-auto max-w-screen-2xl`}
     >
-      <div className="absolute z-20">
+      <div className="absolute z-20 lg:px-20 xl:px-0">
       <h2 className="my-10  text-4xl md:text-5xl lg:text-6xl leading-[1.5] md:leading-[1.6] font-semibold gradient-text">
           Contact Us
         </h2>
@@ -35,8 +36,8 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className="absolute w-full h-screen m-auto">
-      <Experience/>
+      <div className="absolute w-full h-[300px] md:h-[500px] lg:h-[600px] xl:h-[700px]  m-auto">
+     <Experience3/>
       </div>
   
     

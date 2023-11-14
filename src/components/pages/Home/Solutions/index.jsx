@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../../styles";
-import Experience from "../../../Experience";
+import Experience2 from "../../../Experience2";
 
 function Solutions() {
   return (
@@ -16,8 +16,8 @@ function Solutions() {
       </div>
 
       <div className="relative m-auto mt-10 xl:mt-20">
-        <div className="m-auto z-20 absolute w-full lg:w-full xl:w-full h-screen mt-[-80%] lg:mt-[-10%] xl:mt-[-20%] p-32 lg:p-0 xl:p-0">
-          <Experience />
+        <div className="m-auto z-20 absolute w-full h-[300px] md:h-[500px] lg:h-[600px] xl:h-[700px] top-[-15%] md:top-[-25%] lg:top-[-35%] xl:top-[-50%]">
+          <Experience2 />
         </div>
         <div className="absolute mt-[8%] lg:mt-[5%] xl:mt-[-10%] m-auto z-0">
           <img src="\images\background-hero.png"></img>
