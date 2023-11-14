@@ -35,7 +35,7 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className="absolute w-auto m-auto">
+      <div className="absolute w-full h-screen m-auto">
       <Experience/>
       </div>
   
