@@ -3,7 +3,7 @@ const styles = {
     buttonBgTwo: "py-2 px-4 rounded-full text-white bg-gradient-tashi",
 
 
-    sectionContainer: "px-32 mx-auto  py-20"
+    sectionContainer: "px-4 py-20 sm:py-20 lg:py-24 sm:px-6 lg:px-20 mx-auto"
 }
 
 export default  styles ;

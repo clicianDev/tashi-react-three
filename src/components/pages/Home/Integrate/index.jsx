@@ -1,25 +1,25 @@
-import React from 'react'
-import styles
- from '../../../styles';
+import React from 'react';
+import styles from '../../../styles';
+
 function Integrate() {
-    return ( 
-        <section id="Integrate"  className={`max-w-screen-2xl m-auto h-full ${styles.sectionContainer} violet-background  grid grid-cols-2 my-10 gap-10`}>
-              <div className='w-full justify-center my-20 '>
-            <img src='images/integrate.svg' className='m-auto'/>
-        </div>
-        <div className='mt-[35%] justify-start'>
-          <h2 className="gradient-text-2 text-[54px] leading-[60px] font-semibold p-5">
-          Integration With <br/>
-Public Networks
-          </h2>
-          <p className="font-normal text-lg text-white mx-5">
-          Our public network will inter-operate with all the leading L1's and L2's from the get go
+  return (
+    <section
+      id="Integrate"
+      className={`max-w-screen-2xl m-auto ${styles.sectionContainer} violet-background flex flex-col sm:flex-row my-10 sm:my-20 gap-5 sm:gap-10`}
+    >
+      <div className="w-full sm:w-[50%] md:w-[60%] lg:w-[70%] xl:w-[75%] justify-center my-10 sm:my-20">
+        <img src="images/integrate.svg" className="m-auto" alt="Integration" />
+      </div>
+      <div className="flex flex-col justify-center w-full sm:w-[50%] md:w-[60%] lg:w-[70%] xl:w-[75%] mt-5 sm:mt-0">
+        <h2 className="gradient-text-2 text-4xl md:text-5xl lg:text-6xl leading-[1.5] md:leading-[1.6] font-semibold p-5">
+          Integration With <br /> Public Networks
+        </h2>
+        <p className="font-normal text-base md:text-lg lg:text-xl text-white mx-5">
+          Our public network will inter-operate with all the leading L1's and L2's from the get-go
         </p>
-        </div>
-
-      
-
-    </section> );
+      </div>
+    </section>
+  );
 }
 
 export default Integrate;
