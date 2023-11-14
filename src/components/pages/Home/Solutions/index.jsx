@@ -14,12 +14,17 @@ function Solutions() {
           Web2 & Web3 Games.
         </h1>
       </div>
-      <div className="relative m-auto">
-      
-        <div className="absolute mt-[-10%] m-auto z-0">
-      
+      <div className="relative m-auto w-full h-full">
+
+        <div className="absolute mt-[-15%] flex justify-center m-auto z-0 h-auto">
+          <div className="absolute h-screen">
+          <Experience/>
+          </div>
+        
           <img src="\images\background-hero.png"></img>
+        
         </div>
+       
        
         <div className="grid grid-cols-2 m-auto">
           <div className="justify-center">
