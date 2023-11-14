@@ -6,14 +6,14 @@ function Contact() {
   return (
     <section
       id="Features"
-      className={`relative h-screen px-32 mx-auto flex items-center gap-5 hero-background overflow-hidden m-auto max-w-screen-2xl`}
+      className={`relative h-screen px-10 md:px-28 lg:px-32 mx-auto flex items-center gap-5 hero-background overflow-hidden m-auto max-w-screen-2xl`}
     >
-      <div className=" absolute">
-        <h2 className="gradient-text-2 text-[54px] leading-[60px] font-semibold p-5 mb-10">
+      <div className="absolute z-20">
+      <h2 className="my-10  text-4xl md:text-5xl lg:text-6xl leading-[1.5] md:leading-[1.6] font-semibold gradient-text">
           Contact Us
         </h2>
         <div className="">
-          <div className="grid grid-flow-row gap-5">
+          <div className="m-auto grid grid-flow-row gap-5">
             <div className="flex gap-5">
               <img src="/images/icons/phone.svg" />
               <p className="font-inter text-white font-normal text-2xl">
