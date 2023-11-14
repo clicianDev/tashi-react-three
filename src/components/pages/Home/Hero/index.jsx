@@ -7,7 +7,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className={`max-w-screen-2xl m-auto relative h-full flex items-center hero-background bg-center lg:bg-right xl:bg-right 2xl:bg-right px-0 ${styles.sectionContainer} `}
+      className={`max-w-screen-2xl m-auto relative h-full flex items-center hero-background bg-center lg:bg-right xl:bg-right 2xl:bg-right px-0 py-20 sm:py-20 lg:py-24 sm:px-6 lg:px-20 mx-auto`}
     >
      
         <div className={`z-10 text-center md:text-left lg:text-left py-32`}>
