@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useAnimations, useGLTF,  } from "@react-three/drei";
+import { useAnimations, useGLTF } from "@react-three/drei";
 
 import { useFrame, useGraph } from "@react-three/fiber";
 import { useMemo } from "react";
@@ -16,9 +16,12 @@ function Model(props) {
   const [shouldPlayAnimation1, setShouldPlayAnimation1] = useState(false);
   const [shouldStopAnimation, setShouldStopAnimation] = useState(false);
 
-  const clone = useMemo(() => SkeletonUtils.clone(mascot.scene), [mascot.scene])
+  const clone = useMemo(
+    () => SkeletonUtils.clone(mascot.scene),
+    [mascot.scene]
+  );
 
-  const {nodes} = useGraph(clone)
+  const { nodes } = useGraph(clone);
   // useEffect(() => {
   //   switch (props.currentPage) {
   //     case 1:
@@ -37,6 +40,13 @@ function Model(props) {
   // }, [props.currentPage]);
 
   useEffect(() => {
+    if (props.isMobile) {
+      setAnimationName("Meditate");
+      setShapekey("Meditate_key");
+    } else {
+      setAnimationName("Discussing_anim");
+      setShapekey("Discussing_key");
+    }
     const animation = actions[animationName];
     const animation2 = actions[shapekey];
 
@@ -65,26 +75,33 @@ function Model(props) {
       animation.fadeOut(0.5);
       animation2.fadeOut(0.5);
     };
-  }, [animationName, shapekey, shouldPlayAnimation1, shouldStopAnimation]);
+  }, [
+    animationName,
+    shapekey,
+    shouldPlayAnimation1,
+    shouldStopAnimation,
+    props.isMobile,
+  ]);
 
   const handleClick = (e) => {
-   
-      setAnimationName("Falling");
-      setShapekey("Falling_Key");
-      setClickCount(clickCount + 1);
-      setShouldPlayAnimation1(true);
-   
+    setAnimationName("Falling");
+    setShapekey("Falling_Key");
+    setClickCount(clickCount + 1);
+    setShouldPlayAnimation1(true);
   };
-  console.log(mascot.materials); 
-  console.log(Object.keys(mascot.materials)); 
+  console.log(mascot.materials);
+  console.log(Object.keys(mascot.materials));
   return (
     <>
       <mesh ref={groups} castShadow receiveShadow onClick={handleClick}>
-        <primitive object={mascot.scene} position={[0, -0.5, 0]} scale={[1.35,1.35,1.35]} />
+        <primitive
+          object={mascot.scene}
+          position={[0, -0.5, 0]}
+          scale={[1.35, 1.35, 1.35]}
+        />
       </mesh>
     </>
   );
 }
 useGLTF.preload("models/mascot.glb");
 export default Model;
-

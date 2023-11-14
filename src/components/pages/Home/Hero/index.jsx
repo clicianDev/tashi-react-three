@@ -7,7 +7,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className={`max-w-screen-2xl m-auto relative h-full flex items-center hero-background bg-center lg:bg-right xl:bg-right 2xl:bg-right${styles.sectionContainer} `}
+      className={`max-w-screen-2xl m-auto relative h-full flex items-center hero-background bg-center lg:bg-right xl:bg-right 2xl:bg-right px-0 ${styles.sectionContainer} `}
     >
      
         <div className={`z-10 text-center md:text-left lg:text-left py-32`}>
@@ -42,7 +42,7 @@ function Hero() {
             </a>
           </div>
         </div>
-        <div className="absolute w-full h-[300px] md:h-[500px] lg:h-[600px] xl:h-[700px] ">
+        <div className="absolute w-full h-[300px] md:h-[500px] lg:h-[600px] xl:h-[700px] mt-[80%] md:mt-0 lg:mt-0 xl:mt-0">
           <Experience />
         </div>
   

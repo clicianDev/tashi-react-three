@@ -94,7 +94,7 @@ const Experience = (props) => {
         />
         {/* <StarParticles /> */}
         <CustomLights />
-       <Model/> 
+       <Model isMobile={isMobile}/> 
      
 
         {/* <Effects disableNormalPass disableGamma>
