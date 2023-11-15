@@ -7,7 +7,7 @@ import { SkeletonUtils } from "three-stdlib";
 
 function Model3(props) {
   const groups = useRef();
-  const mascot = useGLTF("models/mascot3.glb");
+  const mascot = useGLTF("models/mascot-v3/mascot.gltf");
   const { actions, names } = useAnimations(mascot.animations, groups);
   console.log(actions);
   const [clickCount, setClickCount] = useState(0);
@@ -85,6 +85,6 @@ function Model3(props) {
     </>
   );
 }
-useGLTF.preload("models/mascot2.glb");
+useGLTF.preload("models/mascot-v3/mascot.gltf");
 export default Model3;
 

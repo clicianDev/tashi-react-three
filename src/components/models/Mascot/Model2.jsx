@@ -7,7 +7,7 @@ import { SkeletonUtils } from "three-stdlib";
 
 function Model2(props) {
   const groups = useRef();
-  const mascot = useGLTF("models/mascot2.glb");
+  const mascot = useGLTF("models/mascot-v2/mascot.gltf");
   const { actions, names } = useAnimations(mascot.animations, groups);
   console.log(actions);
   const [clickCount, setClickCount] = useState(0);
@@ -16,9 +16,7 @@ function Model2(props) {
   const [shouldPlayAnimation1, setShouldPlayAnimation1] = useState(false);
   const [shouldStopAnimation, setShouldStopAnimation] = useState(false);
 
-  const clone = useMemo(() => SkeletonUtils.clone(mascot.scene), [mascot.scene])
 
-  const {nodes} = useGraph(clone)
   // useEffect(() => {
   //   switch (props.currentPage) {
   //     case 1:
@@ -85,6 +83,6 @@ function Model2(props) {
     </>
   );
 }
-useGLTF.preload("models/mascot2.glb");
+useGLTF.preload("models/mascot-v2/mascot.gltf");
 export default Model2;
 
