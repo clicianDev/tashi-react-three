@@ -2,16 +2,19 @@
     {
         "title": "Mesh Multiplayer",
         "subtitle": "Distributed Ledger",
-        "description": "Network architecture for multiplayer gaming that provides security of client server model and cost benefits of P2P model."
+        "description": "Network architecture for multiplayer gaming that provides security of client server model and cost benefits of P2P model.",
+        "status": false
     },
     {
         "title": "Compliance & Distribution",
         "subtitle": "Change to Zero Knowledge Proofs",
-        "description": "Autonomous and interoperable identity for gamers to collect all in game data."
+        "description": "Autonomous and interoperable identity for gamers to collect all in game data.",
+        "status": true
     }, 
     {
         "title": "Monetization Models",
         "subtitle": "Change to Public Network",
-        "description": "Attribution and composability to enable new revenue models for the gaming industry."
+        "description": "Attribution and composability to enable new revenue models for the gaming industry.",
+        "status": true
     }
 ]

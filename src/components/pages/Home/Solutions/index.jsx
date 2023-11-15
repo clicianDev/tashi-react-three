@@ -22,6 +22,7 @@ function Solutions() {
         <div className="absolute mt-[8%] lg:mt-[5%] xl:mt-[-10%] m-auto z-0">
           <img src="\images\background-hero.png"></img>
         </div>
+        {/* parallax starts here */}
         <div className="grid grid-cols-2 m-auto gap-5">
           <div className="justify-center p-5 md:p-2 lg:p-10 xl:p-0">
             <img className="m-auto" src="/images/solutions/Web2.svg" />
@@ -30,6 +31,7 @@ function Solutions() {
             <img className="m-auto" src="/images/solutions/Web3.svg" />
           </div>
         </div>
+            {/* parallax end here */}
       </div>
     </section>
   );
