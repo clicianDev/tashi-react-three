@@ -4,19 +4,20 @@
         "path": "about-us"
     },
     {
+        "title": "Tashi’s Architecture",
+        "path": "tashi-architecture"
+    },
+    {
+        "title": "Team",
+        "path": "team"
+    },
+    {
         "title": "Blog",
         "path": "blog"
     },
     {
         "title": "Careers",
         "path": "careers"
-    },
-    {
-        "title": "Documentation"
-        ,"path": "documentation"
-    },
-    {
-        "title": "Roadmap",
-        "path": "roadmap"
     }
+
 ]
