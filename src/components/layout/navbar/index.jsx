@@ -1,6 +1,5 @@
 import React from "react";
-import items from "./items.json";
-import styles from "../styles";
+
 import Logo from "./components/Logo";
 import NavList from "./components/NavList";
 import MobileNavList from "./components/mobile/MobileNavList";

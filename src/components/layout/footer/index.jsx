@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../styles";
 import Logo from "./components/Logo";
 import NavList from "../navbar/components/NavList";
 import MobileNavList from "./components/mobile/MobileNavList";

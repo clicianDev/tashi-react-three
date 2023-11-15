@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import styles from "../../../styles";
-
+import styles from "../../../../styles";
+import Items from "../../items.json";
 function MobileNavList() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -16,7 +16,7 @@ function MobileNavList() {
           onClick={toggleMobileMenu}
           id="navbar-toggle"
           type="button"
-          className="relative z-10 -m-2 p-2 inline-flex items-center rounded-lg opacity-70 transition-opacity active:opacity-100 hover:bg-gray-200/50 [&:not(:focus-visible)]:focus:outline-none"
+          className="relative z-10 -m-2 p-2 inline-flex items-center rounded-lg opacity-70 transition-opacity active:opacity-100  [&:not(:focus-visible)]:focus:outline-none"
           aria-label="Toggle site navigation"
           aria-expanded={isMobileMenuOpen}
         >
@@ -38,7 +38,7 @@ function MobileNavList() {
             <div
               onClick={toggleMobileMenu}
               id="navbar-popover-overlay"
-              className="fixed inset-0 z-0 bg-gray-300/30 backdrop-blur opacity-100"
+              className="fixed inset-0 z-0 bg-tashi-primary backdrop-blur opacity-70"
               aria-hidden="true"
             ></div>
             <div
@@ -47,28 +47,15 @@ function MobileNavList() {
               tabIndex="-1"
             >
               <div className="space-y-4">
-                {/* ... your mobile menu items ... */}
-                <a
-                  className="block tashi-nav-link-mobile"
-                  href="/about-us"
-                >
-                  About
-                </a>
-                <a
-                  className="block tashi-nav-link-mobile"
-                  href="https://medium.com/tashi-gg"
-                >
-                  Blog
-                </a>
-                <a className="block tashi-nav-link-mobile" href="/careers.html">
-                  Careers
-                </a>
-                <a
-                  className="block tashi-nav-link-mobile"
-                  href="https://tashi.dev"
-                >
-                  Documentation
-                </a>
+                {Items.map((item, index) => (
+                  <a
+                    key={index}
+                    className="block tashi-nav-link-mobile"
+                    href={`/${item.path}`}
+                  >
+                    {item.title}
+                  </a>
+                ))}
               </div>
 
               <div className="mt-8 flex flex-row gap-4">
@@ -78,19 +65,30 @@ function MobileNavList() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
-                    src="/images/navbar/logos/social/linkedin.svg"
-                    alt="LinkedIn"
-                  />
+                  <img src="/images/navbar/icons/discord.svg" alt="Discord" />
                 </a>
-                {/* ... your other social media icons ... */}
+                <a
+                  className="lg:block tashi-nav-social-media"
+                  href="https://www.linkedin.com/company/tashigg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/images/navbar/icons/reddit.svg" alt="Reddit" />
+                </a>
+                <a
+                  className="lg:block tashi-nav-social-media"
+                  href="https://www.linkedin.com/company/tashigg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/images/navbar/icons/twitter.svg" alt="Twitter" />
+                </a>
+
               </div>
             </div>
           </>
         )}
       </div>
-
-      {/* ... the rest of your component ... */}
       <div className="hidden lg:flex gap-5">
         <img src="/images/navbar/icons/discord.svg" alt="Discord" />
         <img src="/images/navbar/icons/reddit.svg" alt="Reddit" />
