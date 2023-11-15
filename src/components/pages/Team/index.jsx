@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from '../../styles';
-import Team from './components/Team';
 
-function About() {
+import TeamList from './components/Team';
+
+function Team() {
   return (
     <>
       <section
@@ -17,10 +18,10 @@ function About() {
             Seasoned professionals with specialized Web3 experience
           </p>
         </div>
-        <Team />
+       <TeamList/>
       </section>
     </>
   );
 }
 
-export default About;
+export default Team;

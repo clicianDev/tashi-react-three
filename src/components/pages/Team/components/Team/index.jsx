@@ -1,7 +1,7 @@
 import React from "react";
 import Employee from "./Employee"
 import Head from "./Head";
-function Team() {
+function TeamList() {
   return (
     <div className="relative m-auto">
      <Head/>
@@ -11,4 +11,4 @@ function Team() {
   );
 }
 
-export default Team;
+export default TeamList;
