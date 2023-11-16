@@ -19,7 +19,8 @@ function Jobs() {
             <div className="w-max mt-10 lg:mt-0 xl:mt-0">
               <a
                 className={`py-2 px-8 rounded-full border border-tashi-tertiary text-white bg-gradient-tashi text-center inline-block m-auto w-max`}
-                href=""
+                href={`${item.path}`}
+                target="_blank"
               >
                 Apply
               </a>
