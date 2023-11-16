@@ -3,7 +3,7 @@ import team from "./team.json";
 
 function Head() {
   return (
-    <div className="grid grid-cols-2  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-5 px-5 md:px-10 lg:px-20 my-10 md:my-20">
+    <div className="grid grid-cols-2  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-5 px-2 md:px-10 lg:px-20 my-10 md:my-20">
       {team.Head.map((item, index) => (
         <div
           key={index}
@@ -24,7 +24,7 @@ function Head() {
               {item.position}
             </p>
           </div>
-          <div className="hidden sm:hidden md:block xl:block my-0 sm:my-0 lg:my-3 xl:my-3 w-max">
+          <div className=" my-0 sm:my-0 lg:my-3 xl:my-3 w-max">
             <a href={item.url} target="_blank" rel="noopener noreferrer" className="m-auto">
               <img
                 src="./images/About/icons/linkedIn.svg"
