@@ -70,6 +70,13 @@ background-clip: text;
   background-repeat: no-repeat;
   background-position: center;
 }
+.violet-background2 {
+  background-image: url("/public/images/violet-bg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 .sample-background {
   background-image: url("/public/images/gamestack/circle.svg");
