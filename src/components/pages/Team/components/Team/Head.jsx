@@ -24,8 +24,8 @@ function Head() {
               {item.position}
             </p>
           </div>
-          <div className="hidden sm:hidden md:block xl:block my-0 sm:my-0 lg:my-3 xl:my-3">
-            <a href={item.linkedin} target="_blank" rel="noopener noreferrer" className="m-auto">
+          <div className="hidden sm:hidden md:block xl:block my-0 sm:my-0 lg:my-3 xl:my-3 w-max">
+            <a href={item.url} target="_blank" rel="noopener noreferrer" className="m-auto">
               <img
                 src="./images/About/icons/linkedIn.svg"
                 alt={`LinkedIn of ${item.name}`}

@@ -35,10 +35,16 @@ function Info() {
                   {item.description}
                 </p>
               </div>
-              {item.status && (
+              {item.status ? (
                 <div className="font-inter">
                   <a className="underline text-white font-normal text-xl leading-9">
                     Coming Soon!
+                  </a>
+                </div>
+              ) : (
+                <div className="font-inter">
+                  <a className="underline text-white font-normal text-xl leading-9" href="https://docs.tashi.gg/documentation/" target="_blank">
+                    Read more . . .
                   </a>
                 </div>
               )}

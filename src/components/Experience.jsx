@@ -87,7 +87,7 @@ const Experience = (props) => {
         {/* <Environment preset="night" /> */}
         <PerspectiveCamera
           makeDefault
-          position={[0, 1, 1.85]}
+          position={[0, 1, 1.95]}
           fov={90}
           near={0.1}
           far={70}

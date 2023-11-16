@@ -1,10 +1,10 @@
 import React from "react";
-import items from "../items.json";
+import items from "../../items.json";
 
 function NavList() {
   return (
     <div className="flex items-center gap-16 ">
-      <div className="hidden items-center lg:flex lg:gap-6">
+      <div className="hidden items-center lg:flex ">
         {items.map((item, index) => (
           <a
             key={index}

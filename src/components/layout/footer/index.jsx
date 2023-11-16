@@ -14,6 +14,7 @@ function Footer() {
         </div>
       </div>
       <span className="fade-border"></span>
+      <div className="text-center text-white font-inter text-xl leading-10 opacity-50 my-5">Copyright © 2023 Tashi Gaming</div>
     </footer>
   );
 }

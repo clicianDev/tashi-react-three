@@ -4,10 +4,10 @@ import styles from '../../../styles';
 function Integrate() {
   return (
     <section
-      id="Integrate"
-      className={`max-w-screen-2xl m-auto ${styles.sectionContainer} violet-background flex flex-col sm:flex-row my-10 sm:my-20 gap-5 sm:gap-10`}
+      id="Integration"
+      className={`max-w-screen-2xl m-auto px-4 sm:py-20 sm:px-6 lg:px-20 mx-auto violet-background flex flex-col sm:flex-row  gap-5 sm:gap-10`}
     >
-      <div className="w-full sm:w-[50%] md:w-[60%] lg:w-[70%] xl:w-[75%] justify-center my-10 sm:my-20">
+      <div className="w-full sm:w-[50%] md:w-[60%] lg:w-[70%] xl:w-[75%] justify-center ">
         <img src="images/integrate.svg" className="m-auto" alt="Integration" />
       </div>
       <div className="flex flex-col justify-center w-full sm:w-[50%] md:w-[60%] lg:w-[70%] xl:w-[75%] mt-5 sm:mt-0">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../../../../styles";
-import Items from "../../items.json";
+import Items from "../../../items.json";
+import Socials from "../../../Socials";
 function MobileNavList() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -59,43 +60,17 @@ function MobileNavList() {
               </div>
 
               <div className="mt-8 flex flex-row gap-4">
-                <a
-                  className="lg:block tashi-nav-social-media"
-                  href="https://www.linkedin.com/company/tashigg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="/images/navbar/icons/discord.svg" alt="Discord" />
-                </a>
-                <a
-                  className="lg:block tashi-nav-social-media"
-                  href="https://www.linkedin.com/company/tashigg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="/images/navbar/icons/reddit.svg" alt="Reddit" />
-                </a>
-                <a
-                  className="lg:block tashi-nav-social-media"
-                  href="https://www.linkedin.com/company/tashigg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="/images/navbar/icons/twitter.svg" alt="Twitter" />
-                </a>
-
+                <Socials />
               </div>
             </div>
           </>
         )}
       </div>
       <div className="hidden lg:flex gap-5">
-        <img src="/images/navbar/icons/discord.svg" alt="Discord" />
-        <img src="/images/navbar/icons/reddit.svg" alt="Reddit" />
-        <img src="/images/navbar/icons/twitter.svg" alt="Twitter" />
+        <Socials />
       </div>
       <div className="hidden lg:block">
-        <a className={`${styles.buttonBg}`}>Contact Us</a>
+        <a className={`${styles.buttonBg}`} href="mailto: contactus@tashi.gg">Contact Us</a>
       </div>
     </div>
   );

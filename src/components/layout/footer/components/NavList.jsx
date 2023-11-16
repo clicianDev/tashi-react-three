@@ -1,5 +1,5 @@
 import React from "react";
-import items from "../items.json";
+import items from "../../items.json";
 
 function NavList() {
   return (

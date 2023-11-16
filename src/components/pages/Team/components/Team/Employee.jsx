@@ -16,8 +16,8 @@ function Employee() {
             <p className="text-gray-500 font-normal text-base">
               {item.position}
             </p>
-            <div className="mt-10">
-              <a>
+            <div className="mt-10 w-max">
+              <a href={item.url}>
                 <img src="./images/About/icons/linkedIn.svg" />
               </a>
             </div>
