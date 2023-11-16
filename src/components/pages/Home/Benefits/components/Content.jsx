@@ -12,7 +12,7 @@ function Content() {
           >
             <img
               src={`./images/benefits/icons/${item.image}.svg`}
-              className="m-auto"
+              className="m-auto my-5"
               alt={item.title}
             />
             <div className="text-white">
