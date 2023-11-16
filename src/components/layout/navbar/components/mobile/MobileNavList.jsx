@@ -13,7 +13,7 @@ function MobileNavList() {
   return (
     <div className="flex items-center gap-4">
       {/* Mobile */}
-      <div className="lg:hidden">
+      <div className="xl:hidden">
         <button
           onClick={toggleMobileMenu}
           id="navbar-toggle"
@@ -85,10 +85,10 @@ function MobileNavList() {
           </>
         )}
       </div>
-      <div className="hidden lg:flex gap-5">
+      <div className="hidden xl:flex gap-5">
         <Socials />
       </div>
-      <div className="hidden lg:block">
+      <div className="hidden xl:block">
         <a className={`${styles.buttonBg}`} href="mailto: contactus@tashi.gg">
           Contact Us
         </a>
