@@ -1,5 +1,5 @@
 const styles = {
-    buttonBg: "my-10 py-2 px-4 rounded-full border border-tashi-tertiary text-white bg-gradient-tashi text-center inline-block m-auto w-max",
+    buttonBg: "my-10 py-2 px-4 rounded-full border border-tashi-tertiary text-white bg-gradient-tashi ",
     buttonBgTwo: "py-2 px-4 rounded-full text-white bg-gradient-tashi",
 
 
