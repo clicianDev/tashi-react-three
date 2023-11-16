@@ -79,7 +79,7 @@ function Model3(props) {
   console.log(Object.keys(mascot.materials)); 
   return (
     <>
-      <mesh ref={groups} castShadow receiveShadow onClick={handleClick}>
+      <mesh ref={groups} castShadow receiveShadow >
         <primitive object={mascot.scene} position={[0, -0.5, 0]} scale={[1.35,1.35,1.35]} />
       </mesh>
     </>
