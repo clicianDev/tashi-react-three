@@ -69,9 +69,6 @@ function MobileNavList() {
       <div className="hidden lg:flex gap-5">
         <Socials />
       </div>
-      <div className="hidden lg:block">
-        <a className={`${styles.buttonBg}`}>Contact Us</a>
-      </div>
     </div>
   );
 }

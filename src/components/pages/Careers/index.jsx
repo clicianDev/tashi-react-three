@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from '../../styles';
+import Filter from './components/Filter';
+import Jobs from './components/Jobs';
 
 
 
@@ -18,7 +20,8 @@ function Careers() {
           We're currently looking for help in the following areas:
           </p>
         </div>
-    
+        <Filter/>
+        <Jobs/>
       </section>
     </>
   );
