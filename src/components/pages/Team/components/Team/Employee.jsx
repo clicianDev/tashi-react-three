@@ -8,8 +8,8 @@ function Employee() {
           key={index}
           className="border border-tashi-tertiary rounded-2xl p-2 flex gap-5"
         >
-          <div className="border border-tashi-tertiary rounded-2xl flex gap-2 justify-center overflow-hidden">
-            <img src={`./images/About/team/${item.imgPath}.jpeg`} width={140} height={130}/>
+          <div className="border border-tashi-tertiary rounded-2xl flex gap-2 justify-center overflow-hidden  ">
+            <img src={`./images/About/team/${item.imgPath}.jpeg`} width={140} height={130} />
           </div>
           <div className="flex flex-col">
             <h3 className="text-white font-normal text-lg">{item.name}</h3>
@@ -18,7 +18,7 @@ function Employee() {
             </p>
             <div className=" h-full w-max items-end flex flex-col">
               <a href={item.url} className="mt-auto">
-                <img src="./images/About/icons/linkedIn.svg" />
+                <img src="./images/About/icons/linkedIn.svg"    alt={`LinkedIn of ${item.name}`}/>
               </a>
             </div>
           </div>
