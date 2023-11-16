@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 .fade-border {
+  
   display: block;
   border: none;
   color: white;

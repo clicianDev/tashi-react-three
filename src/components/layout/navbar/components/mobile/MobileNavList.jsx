@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "../../../../styles";
 import Items from "../../../items.json";
 import Socials from "../../../Socials";
+import Line from "../../../../../assets/mobileMenuLine.svg";
 function MobileNavList() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -49,18 +50,36 @@ function MobileNavList() {
             >
               <div className="space-y-4">
                 {Items.map((item, index) => (
-                  <a
-                    key={index}
-                    className="block tashi-nav-link-mobile"
-                    href={`/${item.path}`}
-                  >
-                    {item.title}
-                  </a>
+                  <div key={index}>
+                    <div className="py-2 ">
+                      <img src={Line} />
+                    </div>
+                    <a
+                      key={index}
+                      className="block tashi-nav-link-mobile"
+                      href={`/${item.path}`}
+                    >
+                      {item.title}
+                    </a>
+                  </div>
                 ))}
               </div>
-
+              <div className="py-2 mt-5">
+                <img src={Line} />
+              </div>
               <div className="mt-8 flex flex-row gap-4">
                 <Socials />
+              </div>
+              <div className="py-1 mt-5">
+                <img src={Line} />
+              </div>
+              <div className="m-auto w-full flex justify-center">
+                <a
+                  className={`${styles.buttonBg} m-auto w-full text-center`}
+                  href="mailto: contactus@tashi.gg"
+                >
+                  Contact Us
+                </a>
               </div>
             </div>
           </>
@@ -70,7 +89,9 @@ function MobileNavList() {
         <Socials />
       </div>
       <div className="hidden lg:block">
-        <a className={`${styles.buttonBg}`} href="mailto: contactus@tashi.gg">Contact Us</a>
+        <a className={`${styles.buttonBg}`} href="mailto: contactus@tashi.gg">
+          Contact Us
+        </a>
       </div>
     </div>
   );
