@@ -4,7 +4,7 @@ import content from "./content.json";
 function Content() {
   return (
     <div className="px-4 sm:px-8 md:px-12 lg:px-20 benefits-background relative m-auto mt-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 lg:benefits-icon justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 bg-none md:bg-benefits-background bg-no-repeat bg-center  justify-center" style={{ backgroundPositionY: '55%' }}>
         {content.map((item, index) => (
           <div
             key={index}

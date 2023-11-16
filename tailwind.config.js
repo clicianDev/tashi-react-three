@@ -20,10 +20,11 @@ export default {
       },
       backgroundImage: {
         'gradient-tashi': 'linear-gradient(90deg, #0D0D26, #2C124E)',
-
+        'benefits-background': "url('/public/images/benefits/Logo.svg')",
       
         
       },
+ 
     },
   },
   plugins: [],
