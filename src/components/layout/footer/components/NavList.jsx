@@ -3,8 +3,8 @@ import items from "../../items.json";
 
 function NavList() {
   return (
-    <div className="flex items-center gap-16 ">
-      <div className="hidden items-center lg:flex lg:gap-6">
+    <div>
+      <div className="grid grid-cols-3 items-center lg:flex lg:gap-6">
         {items.map((item, index) => (
           <a
             key={index}

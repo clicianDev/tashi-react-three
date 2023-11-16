@@ -8,16 +8,16 @@ function Employee() {
           key={index}
           className="border border-tashi-tertiary rounded-2xl p-2 flex gap-5"
         >
-          <div className="border border-tashi-tertiary rounded-2xl flex gap-2 justify-center  px-10">
-            <img src="/images/About/icons/person.svg" />
+          <div className="border border-tashi-tertiary rounded-2xl flex gap-2 justify-center overflow-hidden">
+            <img src={`./images/About/team/${item.imgPath}.jpeg`} width={140} height={130}/>
           </div>
-          <div className="">
+          <div className="flex flex-col">
             <h3 className="text-white font-normal text-lg">{item.name}</h3>
             <p className="text-gray-500 font-normal text-base">
               {item.position}
             </p>
-            <div className="mt-10 w-max">
-              <a href={item.url}>
+            <div className=" h-full w-max items-end flex flex-col">
+              <a href={item.url} className="mt-auto">
                 <img src="./images/About/icons/linkedIn.svg" />
               </a>
             </div>

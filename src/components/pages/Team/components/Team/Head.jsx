@@ -7,11 +7,11 @@ function Head() {
       {team.Head.map((item, index) => (
         <div
           key={index}
-          className="border border-tashi-tertiary rounded-2xl p-4"
+          className="border border-tashi-tertiary rounded-2xl p-4 "
         >
           <div className="m-auto">
             <img
-              src={`./images/About/team/${item.imgPath}.png`}
+              src={`./images/About/team/heads/${item.imgPath}.png`}
               className="m-auto w-full h-auto"
               alt={item.name}
             />
@@ -24,8 +24,8 @@ function Head() {
               {item.position}
             </p>
           </div>
-          <div className=" my-0 sm:my-0 lg:my-3 xl:my-3 w-max">
-            <a href={item.url} target="_blank" rel="noopener noreferrer" className="m-auto">
+          <div className="w-max items-end flex flex-col h-auto">
+            <a href={item.url} target="_blank" rel="noopener noreferrer" className="mt-auto">
               <img
                 src="./images/About/icons/linkedIn.svg"
                 alt={`LinkedIn of ${item.name}`}

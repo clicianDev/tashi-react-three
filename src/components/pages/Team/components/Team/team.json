@@ -29,42 +29,51 @@
       {
         "name": "Steve Marshall",
         "position": "Product & Delivery Lead",
-        "url": "https://www.linkedin.com/in/stephen-marshall-7b5343241/"
+        "url": "https://www.linkedin.com/in/stephen-marshall-7b5343241/",
+        "imgPath": "stephen-marshall"
+        
       },
       {
         "name": "Skyler Ross",
         "position": "Consensus Engineer",
-        "url": "https://www.linkedin.com/company/tashigg/"
+        "url": "https://www.linkedin.com/company/tashigg/",
+        "imgPath": "skyler-ross"
       },
       {
         "name": "Sean Tedrow",
         "position": "Consensus Engine Lead",
-        "url": "https://www.linkedin.com/in/sean-p-tedrow/"
+        "url": "https://www.linkedin.com/in/sean-p-tedrow/",
+        "imgPath": "sean-tedrow"
       },
       {
         "name": "Steven Joruk",
         "position": "Senior Product Engineer",
-        "url": "https://www.linkedin.com/company/tashigg/"
+        "url": "https://www.linkedin.com/company/tashigg/",
+        "imgPath": "steven-joruk"
       },
       {
         "name": "Majesty Guia",
         "position": "Admin Lead",
-        "url": "https://www.linkedin.com/in/majesty-miccar-guia-12630510b/"
+        "url": "https://www.linkedin.com/in/majesty-miccar-guia-12630510b/",
+        "imgPath": "majesty-guia"
       },
       {
         "name": "Emil Lager",
         "position": "Unity Lead",
-        "url": "https://www.linkedin.com/in/emil-lager/"
+        "url": "https://www.linkedin.com/in/emil-lager/",
+        "imgPath": "emil-lager"
       },
       {
         "name": "Austin Bonander",
         "position": "Unity Lead",
-        "url": "https://www.linkedin.com/in/austin-bonander-a0815a56/"
+        "url": "https://www.linkedin.com/in/austin-bonander-a0815a56/",
+        "imgPath": "austin-bonander"
       },
       {
         "name": "Vijet Malik",
         "position": "Community Lead",
-        "url": "https://www.linkedin.com/in/vijeet-malik66626/"
+        "url": "https://www.linkedin.com/in/vijeet-malik66626/",
+        "imgPath": "vijeet-malik"
       }
     ]
   }
