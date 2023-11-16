@@ -16,7 +16,7 @@ function Solutions() {
       </div>
 
       <div className="relative m-auto mt-10 xl:mt-20">
-        <div className="m-auto z-20 absolute w-full h-[300px] md:h-[500px] lg:h-[600px] xl:h-[700px] top-[-15%] md:top-[-25%] lg:top-[-35%] xl:top-[-50%]">
+        <div className="m-auto z-20 absolute w-full h-[400px] sm:h-[500px] md:h-[700px] lg:h-[700px] xl:h-[800px] top-[-45%] sm:top-[-25%] md:top-[-35%] lg:top-[-35%] xl:top-[-60%]">
           <Experience2 />
         </div>
         <div className="absolute mt-[8%] lg:mt-[5%] xl:mt-[-10%] m-auto z-0">
