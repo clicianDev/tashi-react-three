@@ -12,8 +12,8 @@
         "path": "loot-locker"
     },
     {
-        "title": "Harvest",
-        "path": "harvest"
+        "title": "Shield",
+        "path": "shield"
     },
     {
         "title": "Aethir",
@@ -24,12 +24,12 @@
         "path": "aradena"
     },
     {
-        "title": "Thetan Arena",
-        "path": "thetan-arena"
+        "title": "Nvidia",
+        "path": "nvidia"
     },
     {
-        "title": "Aether Games",
-        "path": "aether-games"
+        "title": "Nes.Tech",
+        "path": "nestech"
     },
     {
         "title": "Triangle",

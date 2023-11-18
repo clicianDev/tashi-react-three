@@ -2,7 +2,7 @@ import React from "react";
 import Team from "./team.json";
 function Employee() {
   return (
-    <div className="grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-5 w-full my-20 sm:px-5 md:px-20 lg:px-20 xl:px-32">
+    <div className="grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-20 w-full my-20 sm:px-5 md:px-20 lg:px-20 xl:px-32">
       {Team.Employee.map((item, index) => (
         <div
           key={index}

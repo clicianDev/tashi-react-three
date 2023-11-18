@@ -104,7 +104,7 @@ background-clip: text;
   width: 100%; /* Use percentage for width */
   max-width: 397px; /* Set a maximum width if needed */
   height: 350px; /* Use a fixed or percentage value for height */
-  max-height: 350px; /* Set a maximum height if needed */
+  max-height: 450px; /* Set a maximum height if needed */
   position: relative;
   border-radius: 30px;
   border: 1px solid rgba(175, 152, 203, 0.10);

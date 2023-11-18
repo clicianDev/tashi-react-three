@@ -101,8 +101,8 @@ function GameStack() {
           </div>
         </div> */}
 
-      <div className="flex flex-col lg:flex-row my-10 justify-center z-50">
-        <div className="grid grid-cols-1 lg:grid-cols-1 gap-5 lg:gap-10 justify-center md:m-auto">
+      <div className="flex flex-col md:flex-row lg:flex-row my-10 justify-center z-50">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-5 lg:gap-10 justify-center md:m-auto">
           <div className="flex md:block gap-2 items-center">
             <div className="block md:hidden">
               <img src="./images/About/icons/person.svg" />
@@ -148,7 +148,7 @@ function GameStack() {
             </div>
           </div>
         </div>
-        <div className="relative w-full lg:w-1/2 justify-center my-10 z-50 hidden md:block lg:block ">
+        <div className="relative w-full m-0 md:ml-[-10%] md:w-1/2 lg:w-1/2 justify-center my-10 z-50 hidden md:block lg:block ">
           <div className="justify-center w-full">
             <img
               src="images/gamestack/circle.svg"
