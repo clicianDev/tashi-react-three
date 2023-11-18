@@ -6,8 +6,10 @@ function Jobs() {
     <div className="lg:px-20 my-20">
       {jobs.map((item, index) => (
         <div key={index}>
-            <div className="py-10">  <span className="fade-border"></span></div>
-          <div className="lg:flex justify-center content-center ">
+          <div className="py-10">
+            <span className="fade-border"></span>
+          </div>
+          <div className=" lg:flex justify-center content-center ">
             <div className="w-full  m-auto">
               <h3 className="text-white font-semibold text-4xl">
                 {item.title}

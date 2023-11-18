@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@media (min-width: 360px) {
+ .hero-mascot{
+  margin-top: 90%;
+ }
+}
+
 .fade-border {
   
   display: block;
