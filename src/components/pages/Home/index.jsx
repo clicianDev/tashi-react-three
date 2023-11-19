@@ -9,6 +9,7 @@ import GameStack from "./GameStack";
 import Integrate from "./Integrate";
 import Faqs from "./Faqs";
 import Contact from "./Contact";
+import Timeline from "./Timeline";
 function Home() {
   return (
     <>
@@ -18,6 +19,7 @@ function Home() {
       <Benefits />
       <Solutions />
       <Features />
+      {/* <Timeline/> */}
       <GameStack />
       <Integrate />
       <Faqs />
