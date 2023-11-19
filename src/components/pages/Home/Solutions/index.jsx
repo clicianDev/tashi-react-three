@@ -6,7 +6,7 @@ function Solutions() {
   return (
     <section
       id="Solutions "
-      className={`max-w-screen-2xl m-auto relative ${styles.sectionContainer} overflow-clip`}
+      className={`max-w-screen-2xl m-auto relative ${styles.sectionContainer} overflow-hidden`}
     >
       <div className=" font-inter">
         <h2 className=" text-center text-4xl md:text-5xl lg:text-6xl leading-[1.5] md:leading-[1.6] font-semibold gradient-text">

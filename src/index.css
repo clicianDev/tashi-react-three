@@ -10,13 +10,14 @@
   font-weight: normal;
   font-style: normal;
 }
-#root {overflow: hidden;}
+
 html, body {
 
     margin: 0;
     padding: 0;
     background-color: #010313;
 }
+
 
 
 

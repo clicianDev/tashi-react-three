@@ -19,7 +19,7 @@ function Home() {
       <Benefits />
       <Solutions />
       <Features />
-      {/* <Timeline/> */}
+      <Timeline/>
       <GameStack />
       <Integrate />
       <Faqs />
