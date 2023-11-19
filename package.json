@@ -18,6 +18,7 @@
     "@theatre/studio": "^0.7.0",
     "@types/three": "^0.158.2",
     "autoprefixer": "^10.4.16",
+    "d3": "^7.8.5",
     "jotai": "^2.4.3",
     "maath": "^0.10.4",
     "postcss": "^8.4.31",

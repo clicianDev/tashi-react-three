@@ -1,11 +1,15 @@
 import React from 'react';
-import './CircularGauge.scss';
+import './CircularGauge.css';
+import './GaugeMeter.js';
 
 const CircularGauge = ({ value }) => {
+  $(document).ready(function(){
+    $(".GaugeMeter").gaugeMeter();
+  });
 
   return (
-    <div className="semi-donut-model-2 margin" style={{ '--percentage': 50, '--fill': '#E1BA1B' }}>
-    </div>
+   <div class="GaugeMeter" id="GaugeMeter_1" data-percent="0"></div>
+
   );
 };
 

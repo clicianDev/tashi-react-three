@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "../../../styles";
 import Data from "./components/Data";
 
 function Meter() {
+  const [isSectionActive, setIsSectionActive] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsSectionActive(entry.isIntersecting);
+      },
+      { threshold: 0.5 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <section
+      ref={sectionRef}
       id="fastest-consensus-engine"
       className={`relative ${styles.sectionContainer} max-w-screen-2xl violet-background`}
     >
@@ -17,7 +38,7 @@ function Meter() {
         </p>
       </div>
 
-      <Data />
+      <Data isActive={isSectionActive} />
     </section>
   );
 }
