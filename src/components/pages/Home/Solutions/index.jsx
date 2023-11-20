@@ -1,11 +1,39 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "../../../styles";
 import Experience2 from "../../../Experience2";
 
 function Solutions() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry); // Log entry information
+        if (entry.isIntersecting) {
+          sectionRef.current.classList.add("active");
+        } else {
+          sectionRef.current.classList.remove("active");
+        }
+      });
+    }, options);
+  
+    observer.observe(sectionRef.current);
+  
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <section
-      id="Solutions "
+      id="Solutions"
+    
       className={`max-w-screen-2xl m-auto relative ${styles.sectionContainer} overflow-hidden`}
     >
       <div className=" font-inter">
@@ -23,11 +51,11 @@ function Solutions() {
           <img src="\images\background-hero.png"></img>
         </div>
         {/* parallax starts here */}
-        <div className="grid grid-cols-2 m-auto gap-5">
-          <div className="justify-center p-5 md:p-2 lg:p-10 xl:p-0 floating">
+        <div ref={sectionRef} className="grid grid-cols-2 m-auto gap-5 floating">
+          <div className="justify-center p-5 md:p-2 lg:p-10 xl:p-0 ">
             <img className="m-auto" src="/images/solutions/Web2.svg" />
           </div>
-          <div className="justify-center p-5 md:p-2  lg:p-10 xl:p-0 floating ">
+          <div className="justify-center p-5 md:p-2  lg:p-10 xl:p-0 ">
             <img className="m-auto" src="/images/solutions/Web3.svg" />
           </div>
         </div>
