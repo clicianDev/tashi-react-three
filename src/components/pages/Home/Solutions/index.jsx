@@ -19,15 +19,15 @@ function Solutions() {
         <div className="m-auto z-20 absolute w-full h-[400px] sm:h-[500px] md:h-[700px] lg:h-[700px] xl:h-[800px] top-[-45%] sm:top-[-25%] md:top-[-35%] lg:top-[-35%] xl:top-[-60%]">
           <Experience2 />
         </div>
-        <div className="absolute mt-[8%] lg:mt-[5%] xl:mt-[-10%] m-auto z-0">
+        <div className="absolute mt-[8%] lg:mt-[5%] xl:mt-[-10%] m-auto z-10">
           <img src="\images\background-hero.png"></img>
         </div>
         {/* parallax starts here */}
         <div className="grid grid-cols-2 m-auto gap-5">
-          <div className="justify-center p-5 md:p-2 lg:p-10 xl:p-0">
+          <div className="justify-center p-5 md:p-2 lg:p-10 xl:p-0 floating">
             <img className="m-auto" src="/images/solutions/Web2.svg" />
           </div>
-          <div className="justify-center p-5 md:p-2  lg:p-10 xl:p-0">
+          <div className="justify-center p-5 md:p-2  lg:p-10 xl:p-0 floating ">
             <img className="m-auto" src="/images/solutions/Web3.svg" />
           </div>
         </div>
