@@ -79,6 +79,13 @@ background-clip: text;
   background-position: center;
 }
 
+.timeline-background {
+  background-image: url("/public/images/timeline-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 .sample-background {
   background-image: url("/public/images/gamestack/circle.svg");

@@ -9,7 +9,7 @@ function Timeline() {
       <div className="container overflow-visible  ">
         <ul id="cards">
           <li className="card" id="card1">
-            <div className="card-body bg-tashi-primary font-inter text-white violet-background">
+            <div className="card-body bg-tashi-primary font-inter text-white timeline-background">
               <h2 className="font-semibold text-5xl">2022</h2>
               <ul className="text-2xl leading-6 font-normal list-disc p-5">
                 <li className="my-5">Cracked the consensus code</li>
@@ -18,7 +18,7 @@ function Timeline() {
             </div>
           </li>
           <li className="card" id="card2">
-            <div className="card-body bg-tashi-primary font-inter text-white violet-background">
+            <div className="card-body bg-tashi-primary font-inter text-white timeline-background">
               <h2 className="font-semibold text-5xl">2023</h2>
               <ul className="text-2xl leading-6 font-normal list-disc p-5">
                 <li className="my-5">Secured seed funding</li>
@@ -28,7 +28,7 @@ function Timeline() {
             </div>
           </li>
           <li className="card" id="card3">
-            <div className="card-body bg-tashi-primary font-inter text-white violet-background">
+            <div className="card-body bg-tashi-primary font-inter text-white timeline-background">
               <h2 className="font-semibold text-5xl">2024</h2>
               <ul className="text-2xl leading-6 font-normal list-disc p-5 ">
                 <li className="my-5">Token Generation Event</li>
