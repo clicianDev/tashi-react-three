@@ -6,6 +6,8 @@ import Team from "./components/pages/Team";
 import Blog from "./components/pages/Blog";
 import Careers from "./components/pages/Careers";
 import Layout from "./components/layout";
+
+
 function App() {
   return (
     
@@ -18,6 +20,7 @@ function App() {
           <Route path="/careers" element={<Careers />} />
         </Route>
       </Routes>
+
     </BrowserRouter>
   );
 }
