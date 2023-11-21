@@ -10,10 +10,14 @@ const Gauge = ({
     label,
     units,
     isActive,
+    isMobile,
   }) => {
     const [animatedAngle, setAnimatedAngle] = useState(-Math.PI / 1);
-  
+    const [size, setSize] = useState("18em")
+    const [color, setColor] = useState("#0D0D26")
     useEffect(() => {
+
+
       if (isActive) {
         const percentScale = scaleLinear().domain([min, max]).range([0, 1]);
         const percent = percentScale(value);
@@ -33,7 +37,16 @@ const Gauge = ({
   
         return () => cancelAnimationFrame(animationFrame);
       }
-    }, [value, min, max, animatedAngle, isActive]);
+
+      if(isMobile){
+       setSize('10em')
+      setColor('#6C23CC')
+      }
+      else{
+        setSize('18em')
+        setColor('#0D0D26')
+      }
+    }, [value, min, max, animatedAngle, isActive, isMobile, size]);
 
   const backgroundArc = arc()
     .innerRadius(0.75)
@@ -64,7 +77,7 @@ const Gauge = ({
   return (
     <div style={{ textAlign: "center" }}>
       <svg style={{ overflow: "visible" }}
-        width="18em"
+        width={size}
         viewBox={[
           -1, -1,
           2, 1,
@@ -90,8 +103,8 @@ const Gauge = ({
         </defs>
         <path
           d={backgroundArc}
-          fill="#07081c"
-         
+          fill={color}
+         opacity={0.5}
         />
         <path
           d={filledArc}

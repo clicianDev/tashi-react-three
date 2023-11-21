@@ -17,27 +17,27 @@ function Contact() {
           <div className="m-auto grid grid-flow-row gap-5">
             <div className="flex gap-5">
               <img src="/images/icons/phone.svg" />
-              <p className="font-inter text-white font-normal text-2xl">
+              <p className="font-inter text-white font-normal text-lg md:text-2xl">
                 +65 9499 3991
               </p>
             </div>
             <div className="flex gap-5">
               <img src="/images/icons/email.svg" />
-              <p className="font-inter text-white font-normal text-2xl">
+              <p className="font-inter text-white font-normal text-lg md:text-2xl">
                contactus@tashi.gg
               </p>
             </div>
            
             <div className="flex gap-5">
               <img src="/images/icons/pin.svg" />
-              <p className="font-inter text-white font-normal text-2xl">
+              <p className="font-inter text-white font-normal text-lg md:text-2xl">
                 1 Fullerton Rd, Singapore 049213
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="absolute w-full h-[300px] md:h-[500px] lg:h-[600px] xl:h-[700px] mx-20 sm:mx-0 md:mx-0 lg:mx-0 mt-[-10%] sm:mt-0">
+      <div className="absolute w-full h-[250px] md:h-[500px] lg:h-[600px] xl:h-[700px] mx-16 sm:mx-0 md:mx-0 lg:mx-0 mt-[-10%] sm:mt-0">
      <Experience3/>
       </div>
   
