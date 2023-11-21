@@ -7,7 +7,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className={`max-w-screen-2xl m-auto relative h-full flex items-center hero-background bg-bottom bg-contain lg:bg-cover lg:bg-right xl:bg-right 2xl:bg-right px-0 py-20 sm:py-20 lg:py-24 sm:px-6 lg:px-20 mx-auto mb-10 md:mb-0 overflow-hidden`}
+      className={`max-w-screen-2xl m-auto relative h-full flex items-center hero-background bg-bottom bg-contain lg:bg-cover lg:bg-right xl:bg-right 2xl:bg-right px-0 py-20 sm:py-20 lg:py-24 sm:px-6 lg:px-20 mx-auto mb-10 md:mb-0 lg:mb-0 xl:mb-0 overflow-hidden`}
     >
      
         <div className={`z-10 text-center sm:text-left md:text-left lg:text-left py-20 xl:py-32 px-5 sm:px-3 lg:px-0 xl:px-0 `}>
@@ -42,7 +42,7 @@ function Hero() {
             </a>
           </div>
         </div>
-        <div className="hero-mascot absolute mx-0 sm:mx-32 lg:mx-36 xl:mx-36 w-full h-[300px] sm:h-[500px] md:h-[500px] lg:h-[600px] xl:h-[700px] mt-[80%] sm:mt-0 md:mt-0 lg:mt-[-8%] xl:mt-[-10%] ">
+        <div className="hero-mascot absolute mx-0 sm:mx-32 lg:mx-36 xl:mx-36 w-full h-[300px] sm:h-[500px] md:h-[500px] lg:h-[700px] xl:h-[800px] mt-[80%] sm:mt-0 md:mt-0 lg:mt-[-5%] xl:mt-[-7%] ">
           <Experience />
         </div>
   

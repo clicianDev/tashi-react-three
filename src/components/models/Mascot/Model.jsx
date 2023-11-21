@@ -11,8 +11,8 @@ function Model(props) {
   const { actions, names } = useAnimations(mascot.animations, groups);
   console.log(actions);
   const [clickCount, setClickCount] = useState(0);
-  const [animationName, setAnimationName] = useState("Discussing_anim");
-  const [shapekey, setShapekey] = useState("Discussing_key");
+  const [animationName, setAnimationName] = useState("Meditate");
+  const [shapekey, setShapekey] = useState("Meditate_key");
   const [shouldPlayAnimation1, setShouldPlayAnimation1] = useState(false);
   const [shouldStopAnimation, setShouldStopAnimation] = useState(false);
 
@@ -44,8 +44,8 @@ function Model(props) {
       setAnimationName("Meditate");
       setShapekey("Meditate_key");
     } else {
-      setAnimationName("Discussing_anim");
-      setShapekey("Discussing_key");
+      setAnimationName("Meditate");
+      setShapekey("Meditate_key");
     }
     const animation = actions[animationName];
     const animation2 = actions[shapekey];

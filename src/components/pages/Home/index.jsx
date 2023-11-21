@@ -17,7 +17,7 @@ function Home() {
       <Partners />
       <Meter />
       <Benefits />
-      <Solutions />
+      {/* <Solutions /> */}
       <Features />
       <Timeline/>
       <GameStack />

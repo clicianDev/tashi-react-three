@@ -251,7 +251,6 @@ background-clip: text;
   display: grid;
   grid-template-columns: 1fr;
 
-  gap: var(--cardMargin);
   padding-bottom: calc(var(--cards) * var(--cardTopPadding));
   margin-bottom: var(--cardMargin);
 }
@@ -290,27 +289,32 @@ background-clip: text;
 
 /* floating animation */
 
+
+/* Define animation for sliding in from the left */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%) translateY(-50%);
+  }
+  to {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+/* Define animation for sliding in from the right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%) translateY(-50%);
+  }
+  to {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+/* Apply animations to the floating and floating2 classes */
 .floating {
-  /* Your existing styles */
-  animation-name: floating;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-  animation-play-state: paused;
-  margin-left: 30px;
-  margin-top: 15px;
+  animation: slideInLeft 1s ease-in-out; /* Adjust duration and easing as needed */
 }
 
-.floating.active {
-  animation-play-state: running; /* Start the animation when the section is active */
-}
-
-@keyframes floating {
-  0% {
-    transform: translate(0, 50px);
-  }
-  100% {
-    transform: translate(0, -40px);
-  }
+.floating2 {
+  animation: slideInRight 1s ease-in-out; /* Adjust duration and easing as needed */
 }

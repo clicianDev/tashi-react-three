@@ -43,7 +43,7 @@ function Data({ isActive }) {
           30-50ms
         </h3>
         <p className="text-white text-base md:text-lg lg:text-xl leading-normal font-normal opacity-70">
-          Consensus Latency
+          Consensus Finality
         </p>
       </div>
     </div>

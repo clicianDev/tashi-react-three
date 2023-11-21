@@ -3,7 +3,7 @@ import InfoData from "./FeaturesInfo.json";
 
 function Info() {
   return (
-    <div className="grid md:grid-cols-3 gap-5 mt-20 ">
+    <div className="grid md:grid-cols-3 gap-5 mt-40 ">
       {InfoData.map((item, index) => (
         <div key={index} className="features-container px-5 py-0 sm:py-10 ">
           <div className="flip-card-inner m-auto">
@@ -52,6 +52,7 @@ function Info() {
           </div>
         </div>
       ))}
+      
     </div>
   );
 }

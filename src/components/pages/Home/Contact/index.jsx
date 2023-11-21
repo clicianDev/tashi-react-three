@@ -24,7 +24,13 @@ function Contact() {
             <div className="flex gap-5">
               <img src="/images/icons/email.svg" />
               <p className="font-inter text-white font-normal text-2xl">
-                contactus@tashi.gg
+                bobby@tashi.gg
+              </p>
+            </div>
+            <div className="flex gap-5">
+              <img src="/images/icons/email.svg" />
+              <p className="font-inter text-white font-normal text-2xl">
+               jay@tashi.gg
               </p>
             </div>
             <div className="flex gap-5">
@@ -36,7 +42,7 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className="absolute w-full h-[300px] md:h-[500px] lg:h-[600px] xl:h-[700px]  m-auto">
+      <div className="absolute w-full h-[300px] md:h-[500px] lg:h-[600px] xl:h-[700px] mx-20 sm:mx-0 md:mx-0 lg:mx-0 mt-[-10%] sm:mt-0">
      <Experience3/>
       </div>
   
