@@ -19,7 +19,7 @@ import {
   ToneMapping,
 } from "@react-three/postprocessing";
 import { ToneMappingMode } from "postprocessing";
-import Model from "./models/Mascot/Model";
+import Model from "./models/Mascot/Model2";
 import { easing } from "maath";
 import StarParticles from "./models/Particles/StarParticles";
 

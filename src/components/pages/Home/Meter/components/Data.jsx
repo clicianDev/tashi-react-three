@@ -40,7 +40,7 @@ function Data({ isActive }) {
       </div>
       <div className="text-center z-20">
         <h3 className="text-white text-2xl md:text-3xl lg:text-4xl leading-normal font-semibold inline-block m-auto">
-          30-50ms
+        &lt; 100ms
         </h3>
         <p className="text-white text-base md:text-lg lg:text-xl leading-normal font-normal opacity-70">
           Consensus Finality

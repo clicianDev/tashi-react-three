@@ -24,15 +24,10 @@ function Contact() {
             <div className="flex gap-5">
               <img src="/images/icons/email.svg" />
               <p className="font-inter text-white font-normal text-2xl">
-                bobby@tashi.gg
+               contactus@tashi.gg
               </p>
             </div>
-            <div className="flex gap-5">
-              <img src="/images/icons/email.svg" />
-              <p className="font-inter text-white font-normal text-2xl">
-               jay@tashi.gg
-              </p>
-            </div>
+           
             <div className="flex gap-5">
               <img src="/images/icons/pin.svg" />
               <p className="font-inter text-white font-normal text-2xl">
