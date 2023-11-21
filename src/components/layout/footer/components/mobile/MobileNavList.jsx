@@ -12,7 +12,7 @@ function MobileNavList() {
   return (
     <div className="flex items-center gap-4">
       {/* Mobile */}
-      <div className="lg:hidden">
+      <div className="hidden">
         <button
           onClick={toggleMobileMenu}
           id="navbar-toggle"

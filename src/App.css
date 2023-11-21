@@ -124,18 +124,18 @@ background-clip: text;
   justify-self: center;
 }
 
-/* Add media queries for different screen sizes */
+
 @media (max-width: 600px) {
   .features-container {
     justify-self: center;
-    width: 90%; /* Adjust width for smaller screens */
-    height:350px; /* Adjust height for smaller screens */
+    width: 90%; 
+    height:350px;
   }
 }
 
 
 .features-container:hover {
-  background-color: #6C23CC; /* Change background color on hover */
+  background-color: #6C23CC; 
 }
 
 /* flip card */
@@ -287,34 +287,42 @@ background-clip: text;
  
 }
 
-/* floating animation */
 
-
-/* Define animation for sliding in from the left */
 @keyframes slideInLeft {
   from {
-    transform: translateX(-100%) translateY(-50%);
+    transform: translateX(-100%) translateY(-70%);
+    opacity: 0;
   }
   to {
     transform: translateX(0) translateY(0);
+    opacity: 1;
   }
 }
 
-/* Define animation for sliding in from the right */
+
 @keyframes slideInRight {
   from {
-    transform: translateX(100%) translateY(-50%);
+    transform: translateX(100%) translateY(-70%);
+    opacity: 0;
   }
   to {
     transform: translateX(0) translateY(0);
+    opacity: 1;
   }
 }
 
-/* Apply animations to the floating and floating2 classes */
-.floating {
-  animation: slideInLeft 1s ease-in-out; /* Adjust duration and easing as needed */
+
+.floating.active {
+  animation: slideInLeft 2s ease-in-out forwards; /* Keep the final state after animation */
+  display: block; /* Show the element */
 }
 
+.floating2.active {
+  animation: slideInRight 2s ease-in-out forwards; /* Keep the final state after animation */
+  display: block; /* Show the element */
+}
+
+.floating,
 .floating2 {
-  animation: slideInRight 1s ease-in-out; /* Adjust duration and easing as needed */
+  display: none; /* Hide the elements by default */
 }
