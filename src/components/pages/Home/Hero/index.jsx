@@ -15,22 +15,7 @@ function Hero() {
             className={`font-inter gradient-text-2 text-5xl lg:text-5xl xl:text-5xl 2xl:text-7xl lg:leading-[50px] leading-none font-semibold pb-5`}
           >
             <span>Tashi Protocol</span>
-            {/* <Scramble
-              speed="medium"
-              autoStart
-              text="Protocol"
-              steps={[
-                {
-                  roll: 10,
-                  action: "+",
-                  type: "random",
-                },
-                {
-                  action: "-",
-                  type: "random",
-                },
-              ]}
-            /> */}
+
           </h1>
           <p className="font-inter font-normal text-lg sm:text-xl lg:text-2xl text-white lg:leading-10 sm:leading-7 leading-5">
           Blazing Fast Decentralised Gaming Is Here!
