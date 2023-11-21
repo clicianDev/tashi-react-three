@@ -69,10 +69,10 @@ function Faqs() {
     >
       <div className="my-10">
         <h2 className="justify-center gradient-text-2 text-center text-[54px] leading-[60px] font-semibold p-5">
-            FAQ's
+        How can I get started with Tashi?
         </h2>
       </div>
-      <div className="faqs">
+      <div className="faqs my-5">
         {faqs.map((faq, index) => (
           <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
         ))}

@@ -10,7 +10,7 @@ function Benefits() {
     >
       <div className="font-inter text-center p- lg:p-10">
         <h2 className="text-4xl md:text-5xl lg:text-6xl leading-[1.5] md:leading-[1.6] font-semibold gradient-text">
-          Benefits that we deliver.
+        Benefits that we Deliver
         </h2>
         <p className="mt-4 text-base md:text-lg lg:text-xl text-white">
           Tashi simplifies the game dev backend while offering many benefits to game studios

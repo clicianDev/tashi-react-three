@@ -112,8 +112,7 @@ function GameStack() {
                 Play
               </h3>
               <p className="text-white opacity-50 font-normal text-base lg:text-xl">
-                Cross-platform Lobby
-                <br /> & Match-making
+              Cross-Platform Lobby<br/>& Match-making
               </p>
             </div>
           </div>
@@ -182,7 +181,7 @@ function GameStack() {
               </h3>
               <p className="text-white opacity-50 font-normal text-base lg:text-xl">
                 Catalogue, Order, and Entitlements
-                <br /> Wallets & Currency Rails <br /> In-Game/App purchases
+                <br /> Wallets & Currency Rails <br /> In-Game/App Purchases
               </p>
             </div>
           </div>

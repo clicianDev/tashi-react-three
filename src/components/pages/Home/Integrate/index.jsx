@@ -15,7 +15,7 @@ function Integrate() {
           Integration With <br /> Public Networks
         </h2>
         <p className="font-normal text-base md:text-lg lg:text-xl text-white mx-5">
-          Our public network will inter-operate with all the leading L1's and L2's from the get-go
+          Our public network will inter operate with all the leading L1's and L2's from the get-go
         </p>
       </div>
     </section>
