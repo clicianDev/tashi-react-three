@@ -19,7 +19,7 @@ import {
   ToneMapping,
 } from "@react-three/postprocessing";
 import { ToneMappingMode } from "postprocessing";
-import Model from "./models/Mascot/Model2";
+import Model2 from "./models/Mascot/Model2";
 import { easing } from "maath";
 import StarParticles from "./models/Particles/StarParticles";
 
@@ -94,7 +94,7 @@ const Experience = (props) => {
         />
         {/* <StarParticles /> */}
         <CustomLights />
-       <Model isMobile={isMobile}/> 
+       <Model2/> 
      
 
         {/* <Effects disableNormalPass disableGamma>

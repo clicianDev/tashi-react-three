@@ -9,14 +9,12 @@ function Model2(props) {
   const [shapekey, setShapekey] = useState("Meditate_key");
 
   useEffect(() => {
-    const animation = actions[animationName];
-    const animation2 = actions[shapekey];
 
-    animation2.reset().fadeIn(0.5).play();
-    animation.reset().fadeIn(0.5).play();
+    actions[animationName].reset().fadeIn(0.5).play();
+    actions[shapekey].reset().fadeIn(0.5).play();
 
 
-  }, [animationName, shapekey]);
+  },);
 
 
   return (
