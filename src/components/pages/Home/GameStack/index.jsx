@@ -112,7 +112,7 @@ function GameStack() {
                 Play
               </h3>
               <p className="text-white opacity-50 font-normal text-base lg:text-xl">
-              Cross-Platform Lobby<br/>& Match-making
+              Cross-Platform Lobby<br/>& Match-Making
               </p>
             </div>
           </div>
