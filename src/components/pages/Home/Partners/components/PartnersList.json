@@ -1,38 +1,47 @@
 [
     {
         "title": "Unity",
-        "path": "unity"
+        "path": "unity",
+        "url": "https://unity.com/"
     },
     {
         "title": "Beamable",
-        "path": "beamable"
+        "path": "beamable",
+        "url": "https://beamable.com/"
     },
     {
         "title": "Loot Locker",
-        "path": "loot-locker"
+        "path": "loot-locker",
+        "url": "https://lootlocker.com/"
     },
     {
         "title": "Shield",
-        "path": "shield"
+        "path": "shield",
+        "url": "https://www.yieldguild.io/"
     },
     {
         "title": "Aethir",
-        "path": "aethir"
+        "path": "aethir",
+        "url": "https://www.aethir.com/"
     },
     {
         "title": "Aradena",
-        "path": "aradena"
+        "path": "aradena",
+        "url": "https://aradena.io/"
     },
     {
         "title": "Nvidia",
-        "path": "nvidia"
+        "path": "nvidia",
+        "url": "https://www.nvidia.com/"
     },
     {
         "title": "Nes.Tech",
-        "path": "nestech"
+        "path": "nestech",
+        "url": "https://nes.tech/"
     },
     {
         "title": "Triangle",
-        "path": "triangle"
+        "path": "triangle",
+        "url": "https://animalia.games/"
     }
 ]
