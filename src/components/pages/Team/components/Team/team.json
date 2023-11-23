@@ -75,6 +75,28 @@
         "url": "https://www.linkedin.com/in/vijeet-malik66626/",
         "imgPath": "vijeet-malik"
       }
+    ],
+    "Advisors": [
+      {
+        "name": "Gaby Dizon",
+        "desc": "Co-founder of decentralized Yield Guild Games (YGG)",
+        "imgPath": "gaby-dizon"
+      },
+      {
+        "name": "Jimmy Kim",
+        "desc": "Founder of SparkLabs CFO of major gaming company",
+        "imgPath": "jimmy-kim"
+      },
+      {
+        "name": "Gabriel Schillinger",
+        "desc": "Founder of distributed compute start-up Gamma acquired by Animoca Brands",
+        "imgPath": "gabriel-schillinger"
+      },
+      {
+        "name": "Mike Vorhaus",
+        "desc": "24 years running the digital gaming diviisons at Magid",
+        "imgPath": "mike-vorhaus"
+      }
     ]
   }
   
