@@ -80,22 +80,32 @@
       {
         "name": "Gaby Dizon",
         "desc": "Co-founder of decentralized Yield Guild Games (YGG)",
+        "url": "https://www.linkedin.com/in/gabbydizon/",
         "imgPath": "gaby-dizon"
       },
       {
         "name": "Jimmy Kim",
         "desc": "Founder of SparkLabs CFO of major gaming company",
+        "url": "https://www.linkedin.com/in/jimmykim1/",
         "imgPath": "jimmy-kim"
       },
       {
         "name": "Gabriel Schillinger",
         "desc": "Founder of distributed compute start-up Gamma acquired by Animoca Brands",
+        "url": "https://www.linkedin.com/in/gabrielschillinger/",
         "imgPath": "gabriel-schillinger"
       },
       {
         "name": "Mike Vorhaus",
         "desc": "24 years running the digital gaming division at Magid",
+        "url": "https://www.linkedin.com/in/michaelvorhaus/",
         "imgPath": "mike-vorhaus"
+      },
+      {
+        "name": "Jason RM Smith",
+        "desc": "Founder of Games Caviar and 25 years in gaming",
+        "url": "https://www.linkedin.com/in/jasonrmsmith/",
+        "imgPath": "jason-smith"
       }
     ]
   }
