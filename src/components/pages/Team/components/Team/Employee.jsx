@@ -17,7 +17,7 @@ function Employee() {
               {item.position}
             </p>
             <div className=" h-full w-max items-end flex flex-col">
-              <a href={item.url} className="mt-auto">
+              <a href={item.url} className="mt-auto" target='_blank'>
                 <img src="./images/About/icons/linkedIn.svg"    alt={`LinkedIn of ${item.name}`}/>
               </a>
             </div>

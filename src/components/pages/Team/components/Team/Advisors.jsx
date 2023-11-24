@@ -16,7 +16,7 @@
                 <p className="text-gray-500 font-normal text-base">
                 {item.desc}
                 </p>
-                <a href={item.url} className="mt-auto">
+                <a href={item.url} className="mt-auto" target='_blank'>
                     <img src="./images/About/icons/linkedIn.svg"    alt={`LinkedIn of ${item.name} `}/>
                 </a>
             </div>
