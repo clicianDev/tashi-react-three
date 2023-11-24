@@ -13,7 +13,7 @@ function Socials() {
       </a>
       <a
         className="lg:block tashi-nav-social-media"
-        href="https://discord.gg/rMnqBXQn"
+        href="https://discord.gg/SJge5pTwkb"
         target="_blank"
         rel="noopener noreferrer"
       >
