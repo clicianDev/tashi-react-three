@@ -34,11 +34,12 @@
         
       },
       {
-        "name": "Skyler Ross",
-        "position": "Consensus Engineer",
-        "url": "https://www.linkedin.com/in/skyler-ross-073938168/",
-        "imgPath": "skyler-ross"
+        "name": "Austin Bonander",
+        "position": "Chief Engineer",
+        "url": "https://www.linkedin.com/in/austin-bonander-a0815a56/",
+        "imgPath": "austin-bonander"
       },
+      
       {
         "name": "Sean Tedrow",
         "position": "Consensus Engine Lead",
@@ -52,23 +53,25 @@
         "imgPath": "steven-joruk"
       },
       {
-        "name": "Majesty Guia",
-        "position": "Admin Lead",
-        "url": "https://www.linkedin.com/in/majesty-miccar-guia-12630510b/",
-        "imgPath": "majesty-guia"
-      },
-      {
         "name": "Emil Lager",
         "position": "Unity Lead",
         "url": "https://www.linkedin.com/in/emil-lager/",
         "imgPath": "emil-lager"
       },
       {
-        "name": "Austin Bonander",
-        "position": "Unity Lead",
-        "url": "https://www.linkedin.com/in/austin-bonander-a0815a56/",
-        "imgPath": "austin-bonander"
+        "name": "Skyler Ross",
+        "position": "Consensus Engineer",
+        "url": "https://www.linkedin.com/in/skyler-ross-073938168/",
+        "imgPath": "skyler-ross"
       },
+      {
+        "name": "Majesty Guia",
+        "position": "Admin Lead",
+        "url": "https://www.linkedin.com/in/majesty-miccar-guia-12630510b/",
+        "imgPath": "majesty-guia"
+      },
+    
+    
       {
         "name": "Vijeet Malik",
         "position": "Community Lead",
