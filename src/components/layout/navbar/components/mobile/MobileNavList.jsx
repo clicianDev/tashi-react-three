@@ -45,13 +45,13 @@ function MobileNavList() {
             ></div>
             <div
               id="navbar-popover-panel"
-              className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-tashi-primary px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
+              className="absolute text-left sm:text-center lg:text-center xl:text-left inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-tashi-primary px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
               tabIndex="-1"
             >
               <div className="space-y-4">
                 {Items.map((item, index) => (
                   <div key={index}>
-                    <div className="py-2 ">
+                    <div className="py-2 flex justify-center">
                       <img src={Line} />
                     </div>
                     <a
@@ -61,8 +61,14 @@ function MobileNavList() {
                     >
                       {item.title}
                     </a>
+  
                   </div>
+                  
                 ))}
+                 <div className="py-2 flex justify-center">
+                      <img src={Line} />
+                    </div>
+                  <a className="block tashi-nav-link-mobile" href="https://docs.tashi.gg/documentation/" target="_blank">Docs</a>
               </div>
               <div className="py-2 mt-5">
                 <img src={Line} />
