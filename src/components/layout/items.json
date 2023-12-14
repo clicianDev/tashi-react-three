@@ -12,10 +12,6 @@
         "path": "team"
     },
     {
-        "title": "Blog",
-        "path": "blog"
-    },
-    {
         "title": "Careers",
         "path": "careers"
     }

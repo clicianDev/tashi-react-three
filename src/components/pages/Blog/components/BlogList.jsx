@@ -28,8 +28,8 @@ function BlogList() {
         return (
           <div className="lg:my-5 h-auto m-auto" key={index}>
             <a href={item.link} target="_blank">
-              <div className="m m-auto border rounded-3xl overflow-clip w-auto h-[341px] flex justify-center bg-tashi-primary">
-                <img src={item.thumbnail} alt={item.title} width={1000} />
+              <div className="m m-auto border rounded-3xl overflow-clip w-full h-[341px] flex justify-center bg-tashi-primary ">
+                <img src={item.thumbnail} alt={item.title} />
               </div>
               <div className="my-5">
                 <h3 className="font-inter text-white text-xl md:text-2xl lg:text-2xl xl:text-2xl leading-10 font-semibold ">

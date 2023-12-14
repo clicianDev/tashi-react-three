@@ -17,7 +17,8 @@ function NavList() {
           </NavHashLink>
           
         ))}
-        <a className="relative z-10 tashi-nav-link p-2" href="https://docs.tashi.gg/documentation/" target="_blank">Docs</a>
+        <a className="z-10 tashi-nav-link p-2 flex gap-1" href="https://medium.com/tashi-gg" target="_blank">Blog<img src="/images/icons/external-link.svg" className="mt-[-10px]"/></a>
+        <a className="relative z-10 tashi-nav-link p-2 flex gap-1" href="https://docs.tashi.gg/documentation/" target="_blank">Docs<img src="/images/icons/external-link.svg" className="mt-[-10px]"/></a>
       </div>
     </div>
   );
