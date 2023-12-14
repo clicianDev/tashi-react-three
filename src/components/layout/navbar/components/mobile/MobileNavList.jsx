@@ -56,19 +56,19 @@ function MobileNavList() {
                     </div>
                     <a
                       key={index}
-                      className="block tashi-nav-link-mobile"
-                      href={`/${item.path}`}
+                      className={`block tashi-nav-link-mobile ${index <=3 ? '' :'m-auto justify-center flex gap-1'}`}
+                      href={`${index <=3 ? `/${item.path}` : `${item.path}` }`}
                     >
                       {item.title}
+                      {index <=3 ? "" : <img src="/images/icons/external-link.svg" className="mt-[-10px]"/>}
                     </a>
-  
+                    
                   </div>
                   
                 ))}
-                 <div className="py-2 flex justify-center">
-                      <img src={Line} />
-                    </div>
-                  <a className="block tashi-nav-link-mobile" href="https://docs.tashi.gg/documentation/" target="_blank">Docs</a>
+                <div className="py-2 flex justify-center">
+                  <img src={Line} />
+                </div>
               </div>
               <div className="py-2 mt-5">
                 <img src={Line} />
