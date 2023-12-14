@@ -56,7 +56,7 @@ function MobileNavList() {
                     </div>
                     <a
                       key={index}
-                      className={`block tashi-nav-link-mobile ${index <=3 ? '' :'m-auto justify-center flex gap-1'}`}
+                      className={`block tashi-nav-link-mobile ${index <=3 ? '' :'m-auto sm:justify-center flex gap-1'}`}
                       href={`${index <=3 ? `/${item.path}` : `${item.path}` }`}
                     >
                       {item.title}
