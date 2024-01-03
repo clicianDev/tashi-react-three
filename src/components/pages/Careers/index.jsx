@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../../styles';
 import Filter from './components/Filter';
 import Jobs from './components/Jobs';
@@ -6,6 +6,11 @@ import Jobs from './components/Jobs';
 
 
 function Careers() {
+  const [itemSelected, setItemSelected] = useState();
+  const handleSelectedItem = (selectedItem) => {
+    setItemSelected(selectedItem);
+  };
+
   return (
     <>
       <section
@@ -20,8 +25,8 @@ function Careers() {
           We're currently looking for help in the following areas:
           </p>
         </div>
-        <Filter/>
-        <Jobs/>
+        <Filter selectedItem={handleSelectedItem}/>
+        <Jobs selectedItem={itemSelected}/>
       </section>
     </>
   );

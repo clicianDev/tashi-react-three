@@ -1,11 +1,26 @@
-import React from "react";
+import {React, useState, useEffect} from "react";
 import styles from "../../../../styles";
-import jobs from "./openjobs.json";
-function Jobs() {
+import jobsData from "./openjobs.json";
+function Jobs(props) {
+  const [selectedDepartment, setSelectedDepartment] = useState("");
+
+  // Update selected department when props.selectedItem changes
+  useEffect(() => {
+    setSelectedDepartment(props.selectedItem);
+  }, [props.selectedItem]);
+
+  // Filter jobs based on the selected department
+  const filteredJobs = selectedDepartment === "All"
+    ? jobsData
+    : jobsData.filter((job) => job.department === selectedDepartment);
+
+  // Sort jobs based on some criteria (you can modify this)
+  const sortedJobs = filteredJobs.sort((a, b) => a.title.localeCompare(b.title));
   return (
     <div className="lg:px-20 my-20">
-      {jobs.map((item, index) => (
+       {sortedJobs.map((item, index) => (
         <div key={index}>
+          {/* Your job rendering logic */}
           <div className="py-10">
             <span className="fade-border"></span>
           </div>

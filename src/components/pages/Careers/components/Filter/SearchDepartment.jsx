@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SearchContainer from "./SearchContainer";
 
-const SearchDepartment = () => {
+const SearchDepartment = (props) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -10,7 +10,7 @@ const SearchDepartment = () => {
 
   const handleItemClick = (item) => {
     // Handle the selected item (you can perform an action here)
-    console.log(`Selected: ${item}`);
+    props.itemSelected(item)
     // Close the dropdown after selecting an item
     setIsDropdownOpen(false);
   };
@@ -33,21 +33,27 @@ const SearchDepartment = () => {
       
       {isDropdownOpen && (
         <div className="left-0 mt-2 text-white opacity-50 font-inter font-normal mx-5 text-lg">
+            <div
+            className="cursor-pointer mt-2"
+            onClick={() => handleItemClick("All")}
+          >
+            All
+          </div>
           <div
             className="cursor-pointer mt-2"
-            onClick={() => handleItemClick("Remote")}
+            onClick={() => handleItemClick("Business")}
           >
             Business
           </div>
           <div
             className="cursor-pointer mt-2"
-            onClick={() => handleItemClick("Remote")}
+            onClick={() => handleItemClick("Product")}
           >
             Product
           </div>
           <div
             className="cursor-pointer mt-2"
-            onClick={() => handleItemClick("Remote")}
+            onClick={() => handleItemClick("Technology")}
           >
            Technology
           </div>

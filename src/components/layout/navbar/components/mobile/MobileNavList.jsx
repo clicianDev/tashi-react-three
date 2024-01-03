@@ -38,7 +38,7 @@ function MobileNavList() {
         {isMobileMenuOpen && (
           <>
             <div
-              onClick={toggleMobileMenu}
+              onClick={toggleMobileMenu} 
               id="navbar-popover-overlay"
               className="fixed inset-0 z-0 bg-tashi-primary backdrop-blur opacity-70"
               aria-hidden="true"

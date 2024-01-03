@@ -2,26 +2,31 @@
      {
          "title": "Developer Advocate",
         "location": "Remote, Singapore",
-        "path": "https://www.linkedin.com/jobs/view/3584962352/"
+        "path": "https://www.linkedin.com/jobs/view/3584962352/",
+        "department": "Technology"
      },
      {
         "title": "Product Manager",
        "location": "Remote, Singapore",
-       "path": "https://www.linkedin.com/jobs/view/3594208017/"
+       "path": "https://www.linkedin.com/jobs/view/3594208017/",
+       "department": "Product"
     },
     {
         "title": "Business Development Analyst (Internship)",
        "location": "Remote, Singapore",
-       "path": "mailto: contactus@tashi.gg"
+       "path": "mailto: contactus@tashi.gg",
+       "department": "Business"
     },
     {
         "title": "Research Associate",
        "location": "Remote, Singapore",
-       "path": "mailto: contactus@tashi.gg"
+       "path": "mailto: contactus@tashi.gg",
+       "department": "Business"
     },
     {
         "title": "Social Media Intern",
        "location": "Remote, Singapore",
-       "path": "mailto: contactus@tashi.gg"
+       "path": "mailto: contactus@tashi.gg",
+       "department": "Technology"
     }
 ]
