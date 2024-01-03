@@ -10,12 +10,13 @@ function Jobs(props) {
   }, [props.selectedItem]);
 
   // Filter jobs based on the selected department
-  const filteredJobs = selectedDepartment === "All"
-    ? jobsData
-    : jobsData.filter((job) => job.department === selectedDepartment);
+  const filteredJobs = selectedDepartment && selectedDepartment !== "All"
+    ? jobsData.filter((job) => job.department === selectedDepartment)
+    : jobsData;
 
   // Sort jobs based on some criteria (you can modify this)
   const sortedJobs = filteredJobs.sort((a, b) => a.title.localeCompare(b.title));
+
   return (
     <div className="lg:px-20 my-20">
        {sortedJobs.map((item, index) => (
