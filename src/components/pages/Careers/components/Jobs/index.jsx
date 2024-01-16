@@ -21,7 +21,6 @@ function Jobs(props) {
     <div className="lg:px-20 my-20">
        {sortedJobs.map((item, index) => (
         <div key={index}>
-          {/* Your job rendering logic */}
           <div className="py-10">
             <span className="fade-border"></span>
           </div>

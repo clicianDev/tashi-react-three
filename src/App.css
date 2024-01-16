@@ -68,7 +68,7 @@ background-clip: text;
 
 .violet-background {
   background-image: url("/public/images/violet-bg.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -77,6 +77,7 @@ background-clip: text;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  
 }
 
 .timeline-background {

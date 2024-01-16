@@ -5,7 +5,7 @@ function GameStack() {
   return (
     <section
       id="dGame-stack"
-      className={`max-w-screen-2xl m-auto px-4 py-20 sm:py-20 lg:py-20 sm:px-6 lg:px-20 mx-auto violet-background2`}
+      className={` m-auto px-4 py-20 sm:py-20 md:py-20 lg:py-96 sm:px-6 lg:px-20 mx-auto violet-background2`}
     >
       <div className="text-center">
         <h2 className="gradient-text-2 text-4xl md:text-5xl lg:text-6xl leading-[1.5] md:leading-[1.6] font-semibold">

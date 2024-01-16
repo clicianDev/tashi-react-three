@@ -9,9 +9,7 @@ const SearchLocation = () => {
   };
 
   const handleItemClick = (item) => {
-    // Handle the selected item (you can perform an action here)
     console.log(`Selected: ${item}`);
-    // Close the dropdown after selecting an item
     setIsDropdownOpen(false);
   };
 
