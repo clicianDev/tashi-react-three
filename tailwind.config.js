@@ -6,8 +6,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter'],
-        custom: ['CustomFontName']
+        inter: ['DM+Sans'],
+        custom: ['CustomFontName'],
+        dmSans: ['DM+Sans']
       },
 
       colors: {

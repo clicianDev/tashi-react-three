@@ -12,7 +12,7 @@ function Hero() {
      
         <div className={`z-10 text-center sm:text-left md:text-left lg:text-left py-20 xl:py-32 px-5 sm:px-3 lg:px-0 xl:px-0 `}>
           <h1
-            className={`font-inter gradient-text-2 text-5xl lg:text-5xl xl:text-5xl 2xl:text-7xl lg:leading-[50px] leading-none font-semibold pb-5`}
+            className={`font-dmSans gradient-text-2 text-5xl lg:text-5xl xl:text-5xl 2xl:text-7xl lg:leading-[50px] leading-none font-semibold pb-5`}
           >
             <span>Tashi Protocol</span>
 
