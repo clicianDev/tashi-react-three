@@ -11,7 +11,7 @@ function GameStack() {
         <h2 className="gradient-text-2 text-4xl md:text-5xl lg:text-6xl leading-[1.5] md:leading-[1.6] font-semibold">
           dGame-Stack
         </h2>
-        <p className="mt-4 text-base md:text-lg lg:text-xl text-white lg:px-32">
+        <p className="mt-4 text-base md:text-lg lg:text-xl desc-color lg:px-32">
           Our backend game stack is the most decentralized in the gaming
           industry
         </p>

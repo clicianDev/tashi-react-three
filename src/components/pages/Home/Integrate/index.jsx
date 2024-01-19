@@ -14,7 +14,7 @@ function Integrate() {
         <h2 className="gradient-text-2 text-4xl md:text-5xl lg:text-6xl leading-[1.5] md:leading-[1.6] font-semibold p-5">
           Integration With <br /> Public Networks
         </h2>
-        <p className="font-normal text-base md:text-lg lg:text-xl text-white mx-5">
+        <p className="font-normal text-base md:text-lg lg:text-xl desc-color mx-5">
           Our public network will inter operate with all the leading L1's and L2's from the get-go
         </p>
       </div>
