@@ -15,11 +15,11 @@ function Content() {
               className="m-auto my-5"
               alt={item.title}
             />
-            <div className="text-white">
-              <h3 className="font-bold text-lg sm:text-xl lg:text-2xl">
+            <div>
+              <h3 className="text-white font-bold text-lg sm:text-xl lg:text-2xl">
                 {item.title}
               </h3>
-              <p className="px-3 sm:px-5 lg:px-8 text-sm sm:text-base lg:text-lg">
+              <p className="desc-color px-3 sm:px-5 lg:px-8 text-sm sm:text-base lg:text-lg">
                 {item.Description}
               </p>
             </div>

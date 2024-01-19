@@ -33,7 +33,7 @@ function Meter() {
         <h2 className="text-4xl md:text-5xl lg:text-6xl leading-[1.5] md:leading-[1.6] font-semibold gradient-text-2 p-2">
         Fastest Consensus <br/> Engine in the Gaming Industry
         </h2>
-        <p className=" mt-0 md:mt-10 mb-10 md:mb-0 text-base md:text-lg text-white">
+        <p className=" mt-0 md:mt-10 mb-10 md:mb-0 text-base md:text-lg desc-color">
           Orders of magnitude faster and higher throughput compared to industry standards
         </p>
       </div>

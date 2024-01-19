@@ -23,10 +23,10 @@
 }
 
 .gradient-text {
-  /* Fallback: Set a background color. */
+/*   
   background-color: white;
 
-  /* Create the gradient. */
+
   background-image: -webkit-gradient(
     radial,
     50% 50%,
@@ -37,31 +37,35 @@
     to(#615076)
   );
 
-  /* Set the background size and repeat properties. */
+
   background-size: 100%;
   background-repeat: repeat;
 
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  -moz-text-fill-color: transparent;
+  -moz-text-fill-color: transparent; */
+  color: white;
 }
 
+.desc-color{
+  color: #CDCDCD;
+}
 .gradient-text-2 {
-  background: rgb(175,152,203);
+  color: white;
+  /* background: rgb(175,152,203);
   background: linear-gradient(90deg, rgba(175,152,203,1) 0%, rgba(255,255,255,1) 50%, rgba(175,152,203,1) 100%);
 background-clip: text;
 -webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+-webkit-text-fill-color: transparent; */
 }
 
 .hero-background {
   background-image: url("/public/images/bg-hero.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left 50%;
+  background-position: right 50%;
     
 }
 
